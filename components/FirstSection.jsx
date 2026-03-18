@@ -1,13 +1,12 @@
 import Image from "next/image";
 import img10 from "@/app/assets/bus1.jpg";
-// import img11 from "@/app/assets/Pics/bag11.jpg";
-// import img12 from "@/app/assets/Pics/bag12.jpg";
+
 import { Button } from "./ui/button";
 import Link from "next/link";
 
 function FirstSection() {
   return (
-    <section className="relative py-20 px-6 md:px-16 mt-20 overflow-hidden text-white!">
+    <section className="relative py-20 px-6 md:px-16 -mt-10 overflow-hidden text-white!">
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left: Text Block */}
         <div className="flex flex-col justify-center gap-6">
@@ -19,7 +18,7 @@ function FirstSection() {
             <br />
             <em className="italic ">Simple et Rapide</em>
           </h2>
-          <div className="w-12 h-[2px] bg-white" />
+          <div className="w-12 h-[2px] bg-[#5028ff]" />
           <p
             className=" leading-relaxed text-base max-w-lg"
             style={{

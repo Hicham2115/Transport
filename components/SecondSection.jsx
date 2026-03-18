@@ -52,7 +52,7 @@ function SecondSection() {
           {cards.map((card, i) => (
             <Card
               key={i}
-              className="w-full sm:w-[30%] text-start bg-transparent transition-all border border-[#8c64ff] duration-500 hover:shadow-[-1px_2px_14px_5px_rgba(140,100,255,0.75)] hover:scale-105 hover:-translate-y-2 group cursor-pointer text-white [border-radius:16px_24px_16px_4px]"
+              className="w-full sm:w-[30%] text-start bg-transparent transition-all border border-[#8c64ff] duration-500 hover:shadow-[-1px_2px_14px_5px_rgba(140,100,255,0.75)] hover:scale-101 hover:-translate-y-2 group cursor-pointer text-white [border-radius:16px_24px_16px_4px]"
             >
               <CardContent className="flex flex-col gap-4 p-5">
                 {/* Icon */}

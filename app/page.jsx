@@ -5,8 +5,30 @@ import Hero from "@/components/Hero";
 import FirstSection from "@/components/FirstSection";
 import SecondSection from "@/components/SecondSection";
 import DotGrid from "@/components/DotGrid";
+import img11 from "@/app/assets/SliderImgs/Frame-17-2.png";
+import img12 from "@/app/assets/SliderImgs/Frame-18-2.png";
+import img13 from "@/app/assets/SliderImgs/Frame-19-2.png";
+import img14 from "@/app/assets/SliderImgs/Frame-20-2.png";
+import img15 from "@/app/assets/SliderImgs/Frame-21-2.png";
+import img16 from "@/app/assets/SliderImgs/Frame-22-2.png";
+import LogoLoop from "@/components/LogoLoop";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+} from "react-icons/si";
+import ThirdSection from "@/components/ThirdSection";
 
 function page() {
+  const techLogos = [
+    { src: img11.src, title: "React" },
+    { src: img12.src, title: "TypeScript" },
+    { src: img13.src, title: "Tailwind CSS" },
+    { src: img14.src, title: "Tailwind CSS" },
+    { src: img15.src, title: "Tailwind CSS" },
+    { src: img16.src, title: "Tailwind CSS" },
+  ];
   return (
     <div>
       <Navbar />
@@ -51,9 +73,30 @@ function page() {
         />
         <Hero />
       </div>
+      <div
+        style={{
+          height: "200px",
+          position: "relative",
+          overflow: "hidden",
+          marginTop: "20px",
+        }}
+      >
+        <LogoLoop
+          logos={techLogos}
+          speed={100}
+          direction="left"
+          logoHeight={60}
+          gap={60}
+          hoverSpeed={0}
+          fadeOut
+          useCustomRender={false}
+        />
+      </div>
       <FirstSection />
 
       <SecondSection />
+
+      <ThirdSection />
     </div>
   );
 }
