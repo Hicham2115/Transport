@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { useCallback, useEffect, useMemo, useRef, useState, memo } from 'react';
 import './LogoLoop.css';
 

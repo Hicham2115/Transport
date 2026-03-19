@@ -31,26 +31,23 @@ function Hero() {
         // style={{ animationDelay: "0.4s" }}
       >
         {/* <Link to="contact-us"> */}
-        <button
-          className="px-6 py-4 rounded-2xl text-white font-semibold cursor-pointer
-bg-white/10 backdrop-blur-md border border-white/20
-shadow-lg hover:bg-white/20 transition-all duration-300"
-        >
-          {/* <Rocket className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" /> */}
-          <span>CALCULER MON DEVIS</span>
-          {/* <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" /> */}
-        </button>
-        {/* <Button variant="outline">Button</Button> */}
-        {/* </Link>{" "} */}
-        {/* <Link to="devlopment"> */}
+        <div className="flex gap-4">
+          <button
+            className="flex-1 px-6 py-3 rounded-lg text-white font-semibold cursor-pointer
+    bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
+    shadow-lg hover:bg-white/20 transition-all duration-300"
+          >
+            CALCULER MON DEVIS
+          </button>
 
-        <button
-          className="px-6 py-4 rounded-2xl text-white font-semibold cursor-pointer
-bg-white/10 backdrop-blur-md border border-white/20
-shadow-lg hover:bg-white/20 transition-all duration-300"
-        >
-          ÊTRE RAPPELÉ TOUT DE SUITE
-        </button>
+          <button
+            className="flex-1 px-6 py-3 rounded-lg text-white font-semibold cursor-pointer
+    bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
+    shadow-lg hover:bg-white/20 transition-all duration-300"
+          >
+            VIEW OUR SERVICES
+          </button>
+        </div>
         {/* </Link> */}
       </div>
     </div>

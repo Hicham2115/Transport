@@ -1,10 +1,9 @@
 import React from "react";
-import Hyperspeed from "@/components/Hyperspeed";
+import Hyperspeed from "@/components/Background/Hyperspeed";
 import Navbar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import FirstSection from "@/components/FirstSection";
 import SecondSection from "@/components/SecondSection";
-import DotGrid from "@/components/DotGrid";
 import img11 from "@/app/assets/SliderImgs/Frame-17-2.png";
 import img12 from "@/app/assets/SliderImgs/Frame-18-2.png";
 import img13 from "@/app/assets/SliderImgs/Frame-19-2.png";
@@ -19,6 +18,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import ThirdSection from "@/components/ThirdSection";
+import FaQ from "@/components/FAQ";
 
 function page() {
   const techLogos = [
@@ -93,10 +93,9 @@ function page() {
         />
       </div>
       <FirstSection />
-
       <SecondSection />
-
       <ThirdSection />
+      <FaQ />
     </div>
   );
 }
