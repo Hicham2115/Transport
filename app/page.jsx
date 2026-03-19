@@ -19,6 +19,7 @@ import {
 } from "react-icons/si";
 import ThirdSection from "@/components/ThirdSection";
 import FaQ from "@/components/FAQ";
+import DemanderDevis from "@/components/DemanderDevis";
 
 function page() {
   const techLogos = [
@@ -94,6 +95,8 @@ function page() {
       </div>
       <FirstSection />
       <SecondSection />
+      <DemanderDevis />
+
       <ThirdSection />
       <FaQ />
     </div>

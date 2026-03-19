@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function FirstSection() {
   return (
-    <section className="relative py-20 px-6 md:px-16 -mt-10 overflow-hidden text-white!">
+    <section className="relative py-20 px-6 md:px-16 -mt-20 overflow-hidden text-white!">
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left: Text Block */}
         <div className="flex flex-col justify-center gap-6">
@@ -65,6 +65,7 @@ function FirstSection() {
               fill
               className="object-cover group-hover:scale-101 rounded-lg transition-transform duration-700 ease-in-out"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#2C1F0E]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
         </div>
       </div>

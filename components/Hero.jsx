@@ -9,7 +9,7 @@ function Hero() {
         Location De Bus, Minibus
         <span className="block mt-6">
           Et Autocar Avec{" "}
-          <span className="bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#937af9] to-[#8164f3] bg-clip-text text-transparent">
             Chauffeur
           </span>
         </span>
@@ -37,7 +37,7 @@ function Hero() {
     bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
     shadow-lg hover:bg-white/20 transition-all duration-300"
           >
-            CALCULER MON DEVIS
+            DEMANDER UN DEVIS
           </button>
 
           <button

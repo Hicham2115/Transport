@@ -13,18 +13,14 @@ function SecondSection() {
         "Spécialiste de la location de bus et minibus avec chauffeur depuis de nombreuses années, SO.TRA.CARS vous garantit un service irréprochable.",
     },
     {
-      icon: (
-        clientIcon.src
-      ),
+      icon: clientIcon.src,
       iconBg: "bg-gradient-to-br from-[#8c64ff] to-[#5226ff]",
       title: "SERVICE CLIENT",
       description:
         "Notre service client est à votre écoute 7j/7 pour répondre à vos demandes de location de car.",
     },
     {
-      icon: (
-     priceIcon.src
-      ),
+      icon: priceIcon.src,
       iconBg: "bg-gradient-to-br from-[#8c64ff] to-[#5226ff]",
       title: "PRIX ATTRACTIFS",
       description:
@@ -42,10 +38,10 @@ function SecondSection() {
           DEMO Name
         </h1>
         <p className="text-xl md:text-lg max-w-3xl mx-auto text-gray-300 -mt-4 px-4">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam ad
-          rerum expedita distinctio harum eveniet aperiam ipsa excepturi,
-          officia, sint consectetur nam, quam fugiat minus dicta dignissimos
-          praesentium. Ducimus, voluptatibus.
+          SO.TRA.CARS est votre partenaire de confiance pour la location de bus
+          et minibus avec chauffeur. Nous proposons des solutions de transport
+          fiables, adaptées à tous types de déplacements, avec un service
+          rapide, des prix compétitifs et un accompagnement personnalisé.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-8 flex-wrap max-w-6xl">
@@ -59,7 +55,7 @@ function SecondSection() {
                 <div
                   className={`w-12 h-12 rounded-xl ${card.iconBg} flex items-center justify-center shadow-md transition-transform duration-500  group-hover:scale-110`}
                 >
-                  <img src={card.icon} alt="bus-img" className="w-6"/>
+                  <img src={card.icon} alt="bus-img" className="w-6" />
                 </div>
 
                 {/* Text */}

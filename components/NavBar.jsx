@@ -69,7 +69,7 @@ export default function Component() {
                     <NavigationMenuItem className="w-full" key={link.href}>
                       <NavigationMenuLink
                         active={link.active}
-                        className="py-1.5"
+                        className="py-1.5 hover:underline"
                         href={link.href}
                       >
                         {link.label}
@@ -118,7 +118,7 @@ export default function Component() {
                 <NavigationMenuItem key={index}>
                   <NavigationMenuLink
                     active={link.active}
-                    className={`py-1.5 px-3 font-medium transition-all rounded-md hover:bg-transparent ${
+                    className={`py-1.5 px-3 font-medium transition-all hover:underline rounded-md hover:bg-transparent ${
                       link.active
                         ? "text-white bg-[#5226ff] shadow-[0_0_20px_rgba(186,252,12,0.6)]"
                         : "hover:text-[#5226ff]"
