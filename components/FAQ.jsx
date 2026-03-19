@@ -40,7 +40,7 @@ function FAQ() {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="flex-1 w-full mb-10">
+      <div className="flex-1 w-full">
         <Accordion
           type="single"
           collapsible
