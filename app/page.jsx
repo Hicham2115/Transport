@@ -20,9 +20,10 @@ import {
 import ThirdSection from "@/components/ThirdSection";
 import FaQ from "@/components/FAQ";
 import DemanderDevis from "@/components/DemanderDevis";
-import Autocars from "@/components/Autocars";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import MacbookScroll from "@/components/ui/macbook-scroll";
+import Destinations from "@/components/Destinations";
+import Services from "@/components/Services";
 
 function page() {
   const techLogos = [
@@ -98,13 +99,15 @@ function page() {
       </div>
       <FirstSection />
       <SecondSection />
+      <Services />
+
       <DemanderDevis />
 
       <ThirdSection />
       <FaQ />
-      {/* <Autocars /> */}
       <SmoothCursor />
       <MacbookScroll />
+      <Destinations />
     </div>
   );
 }
