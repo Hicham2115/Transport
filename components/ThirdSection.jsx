@@ -1,10 +1,6 @@
 import Image from "next/image";
-import busIcon from "@/app/assets/busIcon.png";
-import clientIcon from "@/app/assets/clientIcon.png";
-import priceIcon from "@/app/assets/priceIcon.png";
-import BorderGlow from "@/components/BorderGlow";
 
-import temps  from "@/app/assets/temps.png";
+import temps from "@/app/assets/temps.png";
 import économique from "@/app/assets/économique.png";
 import besoins from "@/app/assets/besoins.png";
 
@@ -12,63 +8,78 @@ function ThirdSection() {
   const features = [
     {
       title: "Une solution économique",
-      icon: temps.src,
+      icon: économique,
       description:
-        "La location d’un bus avec chauffeur est une solution économique, flexible et idéale pour les déplacements en groupe. Elle offre un excellent rapport qualité/prix, adaptée aux événements professionnels et privés. Grâce à un large réseau de partenaires, vous bénéficiez des meilleurs tarifs et d’un service rapide, disponible partout en France et en Europe.",
+        "La location d'un bus avec chauffeur est une solution économique, flexible et idéale pour les déplacements en groupe.",
     },
     {
       title: "Économisez votre temps !",
-      icon: économique.src,
+      icon: temps,
       description:
-        "Organiser un voyage en groupe peut être complexe et demande beaucoup de préparation. Sotracars France simplifie cette tâche en prenant en charge toute la logistique grâce à son service de location de bus avec chauffeur, garantissant sécurité, confort et professionnalisme pour tous types de déplacements.",
+        "Sotracars France simplifie l'organisation en prenant en charge toute la logistique pour vos déplacements.",
     },
     {
-      title: "On s’adapte à vos besoins",
-      icon: besoins.src,
+      title: "On s'adapte à vos besoins",
+      icon: besoins,
       description:
-        "La location d’autocar avec chauffeur convient à tous types de déplacements (voyages de groupe, événements, séminaires, transferts). Elle simplifie l’organisation grâce à une grande flexibilité selon votre destination, vos horaires et vos besoins. Avec une large flotte de véhicules (différentes tailles et équipements comme Wi-Fi, prises, toilettes, etc.), vous trouvez toujours un bus adapté.",
+        "Une large flotte de véhicules adaptés à tous types de déplacements avec équipements modernes.",
     },
   ];
 
   return (
-    <section className="w-full flex justify-center mt-20 px-4" id="AboutUs">
-      <div className="max-w-6xl w-full text-center space-y-10">
-        {/* Title */}
-        <h1 className="text-2xl md:text-4xl font-black text-white">
-          Pourquoi louer un bus avec chauffeur ?
-        </h1>
+    <>
+      <style>{`
+        @keyframes spinBorder {
+          0%   { transform: translate(-50%, -50%) rotate(0deg); }
+          100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        .spin-border-inner {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 200%;
+          height: 200%;
+          background: conic-gradient(from 0deg, transparent 55%, #5226ff 65%, #e060cb 75%, #5226ff 85%, transparent 95%);
+          animation: spinBorder 4s linear infinite;
+        }
+      `}</style>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
-          {features.map((item, i) => (
-            <BorderGlow
-              key={i}
-              edgeSensitivity={40}
-              glowRadius={30}
-              glowIntensity={3}
-              borderRadius={20}
-              colors={["#5226ff", "#a855f7", "#e060cb"]}
-              className="transition-all duration-500 hover:scale-105 hover:-translate-y-2"
-            >
-              <div className="bg-[#060010] rounded-[20px] p-6 h-full flex flex-col items-center text-center gap-4 text-white">
-                {/* Icon */}
-                <div className="w-14 h-14 flex items-center justify-center rounded-lg bg-gradient-to-br from-[#5226ff] to-[#e060cb] group-hover:scale-110 transition">
-                  <Image src={item.icon} alt="" width={28} height={28} />
+      <section className="w-full flex justify-center mt-20 px-4" id="AboutUs">
+        <div className="max-w-5xl w-full text-center space-y-10">
+          <h1 className="text-2xl md:text-4xl font-black text-white">
+            Pourquoi louer un bus avec chauffeur ?
+          </h1>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {features.map((item, i) => (
+              <div
+                key={i}
+                className="group relative rounded-2xl p-[2px] overflow-hidden"
+              >
+                {/* Spinning conic gradient */}
+                <div className="spin-border-inner" />
+
+                {/* Inner card */}
+                <div className="relative bg-[#060010] rounded-2xl p-6 h-full flex flex-col items-center text-center gap-4 text-white transition-transform duration-300 group-hover:scale-[1.03]">
+                  <div className="w-14 h-14 flex items-center justify-center rounded-lg bg-gradient-to-br from-[#5226ff] to-[#e060cb] shadow-lg shadow-purple-500/20">
+                    <Image
+                      src={item.icon}
+                      alt={item.title}
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <h3 className="text-lg font-bold">{item.title}</h3>
+                  <p className="text-sm text-gray-400 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
-
-                {/* Title */}
-                <h3 className="text-lg font-bold">{item.title}</h3>
-
-                {/* Text */}
-                <p className="text-sm text-gray-400 leading-relaxed">
-                  {item.description}
-                </p>
               </div>
-            </BorderGlow>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

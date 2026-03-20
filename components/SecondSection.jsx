@@ -69,7 +69,7 @@ function SecondSection() {
                 </div>
 
                 {/* Explore link */}
-                <div className="flex items-center gap-1 text-sm font-semibold text-[#8c64ff] group-hover:text-white transition-colors duration-300 mt-1">
+                <div className="flex items-center gap-1 text-sm font-semibold text-[#8c64ff] group-hover:text-white transition-colors duration-300 cursor-none mt-1">
                   <span>EN SAVOIR PLUS</span>
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     ▶

@@ -22,7 +22,7 @@ function FAQ() {
 
         <div className="flex gap-4 mt-6">
           <button
-            className="px-4 py-2 rounded-md text-white font-semibold cursor-pointer
+            className="px-4 py-2 rounded-md text-white font-semibold cursor-none
             bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
             shadow-lg hover:bg-white/20 transition-all duration-300"
           >
@@ -30,7 +30,7 @@ function FAQ() {
           </button>
 
           <button
-            className="px-4 py-2 rounded-md text-white font-semibold cursor-pointer
+            className="px-4 py-2 rounded-md text-white font-semibold cursor-none
             bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
             shadow-lg hover:bg-white/20 transition-all duration-300"
           >

@@ -21,6 +21,9 @@ import ThirdSection from "@/components/ThirdSection";
 import FaQ from "@/components/FAQ";
 import DemanderDevis from "@/components/DemanderDevis";
 import Autocars from "@/components/Autocars";
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
+import MacbookScroll from "@/components/ui/macbook-scroll";
+
 function page() {
   const techLogos = [
     { src: img11.src, title: "React" },
@@ -100,6 +103,8 @@ function page() {
       <ThirdSection />
       <FaQ />
       {/* <Autocars /> */}
+      <SmoothCursor />
+      <MacbookScroll />
     </div>
   );
 }

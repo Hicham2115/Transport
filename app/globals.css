@@ -127,3 +127,6 @@
     @apply font-sans;
   }
 }
+* {
+  cursor: none !important;
+}
