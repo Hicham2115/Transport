@@ -1,4 +1,3 @@
-"use client";
 
 import Lottie from "lottie-react";
 import animationData from "@/public/animations/Bus Transport.json";
@@ -7,7 +6,7 @@ import img1 from "@/app/assets/juan-encalada-6mcVaoGNz1w-unsplash.jpg";
 
 function Services() {
   return (
-    <section className="relative py-20 px-6 md:px-16 -mt-20 overflow-hidden text-white!">
+    <section className="relative py-20 px-6 md:px-16 -mt-20 overflow-hidden text-white!" id="Services">
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left: Text Block */}
         <div className="flex flex-col justify-center gap-6">

@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import Hyperspeed from "@/components/Background/Hyperspeed";
 import Navbar from "@/components/NavBar";
 import Hero from "@/components/Hero";
@@ -26,6 +26,7 @@ import Destinations from "@/components/Destinations";
 import Services from "@/components/Services";
 
 function page() {
+  
   const techLogos = [
     { src: img11.src, title: "React" },
     { src: img12.src, title: "TypeScript" },
@@ -34,10 +35,10 @@ function page() {
     { src: img15.src, title: "Tailwind CSS" },
     { src: img16.src, title: "Tailwind CSS" },
   ];
+
   return (
     <div>
       <Navbar />
-
       <div style={{ position: "relative", width: "100%", minHeight: "300px" }}>
         <Hyperspeed
           effectOptions={{
@@ -99,14 +100,16 @@ function page() {
       </div>
       <FirstSection />
       <SecondSection />
-      <Services />
-
+      <div id="Services">
+        <Services />
+      </div>
       <DemanderDevis />
-
       <ThirdSection />
       <FaQ />
       <SmoothCursor />
-      <MacbookScroll />
+      <div id="Autocars">
+        <MacbookScroll />
+      </div>
       <Destinations />
     </div>
   );

@@ -15,13 +15,23 @@ import Link from "next/link";
 
 const navigationLinks = [
   { href: "/", label: "Home" },
-  { href: "/", label: "Services" },
-  { href: "/", label: "Autocars" },
-  { href: "/", label: "Destinations" },
-  { href: "/", label: "Demander un devis" },
+  { href: "#Services", label: "Services" },
+  { href: "#Autocars", label: "Autocars" },
+  { href: "#", label: "Destinations" },
+  { href: "#", label: "Demander un devis" },
 ];
 
 export default function Component() {
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    el.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <header className="px-4 md:px-6 sticky top-0 z-50 backdrop-blur-lg text-white">
       <div className="flex h-16 items-center justify-between gap-4">
