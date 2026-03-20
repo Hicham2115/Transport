@@ -8,6 +8,7 @@ import {
 import img1 from "@/app/assets/fachy-marin-p_ILi6tlMwM-unsplash.jpg";
 import img2 from "@/app/assets/jeswin-thomas-iIGovKRty8g-unsplash.jpg";
 import img3 from "@/app/assets/piotrek-bSGFdq_WkEM-unsplash.jpg";
+import stars from "@/app/assets/rating.png";
 
 import Image from "next/image";
 
@@ -61,13 +62,23 @@ function DemanderDevis() {
                   alt="Avatar"
                   className="w-10 h-10 rounded-full object-cover"
                 />
-                <div>
-                  <p className="text-white font-semibold text-sm">
-                    David J. Karem
-                  </p>
-                  <p className="text-white/40 text-xs">
-                    Businessmen • 1 day ago
-                  </p>
+                <div className="flex justify-between w-full">
+                  <div>
+                    <p className="text-white font-semibold text-sm">
+                      David J. Karem
+                    </p>
+                    <p className="text-white/40 text-xs">
+                      Businessmen • 5 days ago
+                    </p>
+                  </div>
+
+                  <div className="flex ml-auto">
+                    <img
+                      src={stars.src}
+                      alt="Stars"
+                      className="w-10 h-10 rounded-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
 

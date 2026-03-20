@@ -1,4 +1,3 @@
-
 import Lottie from "lottie-react";
 import animationData from "@/public/animations/Bus Transport.json";
 import Image from "next/image";
@@ -6,7 +5,10 @@ import img1 from "@/app/assets/juan-encalada-6mcVaoGNz1w-unsplash.jpg";
 
 function Services() {
   return (
-    <section className="relative py-20 px-6 md:px-16 -mt-20 overflow-hidden text-white!" id="Services">
+    <section
+      className="relative py-20 px-6 md:px-16 -mt-20 overflow-hidden text-white!"
+      id="Services"
+    >
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left: Text Block */}
         <div className="flex flex-col justify-center gap-6">
@@ -41,8 +43,6 @@ function Services() {
             scolaires, location de bus à Paris 1 ou encore location de bus à
             Paris 2.
           </p>
-
-          <br />
         </div>
 
         <div className="flex h-[400px] md:h-[500px] lg:h-[600px] relative">
