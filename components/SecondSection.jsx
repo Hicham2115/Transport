@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import busIcon from "@/app/assets/busIcon.png";
 import clientIcon from "@/app/assets/clientIcon.png";
 import priceIcon from "@/app/assets/priceIcon.png";
+import Image from "next/image";
 import SplitText from "@/components/SplitText";
 
 function SecondSection() {
@@ -78,7 +79,16 @@ function SecondSection() {
                   <div
                     className={`w-12 h-12 rounded-xl ${card.iconBg} flex items-center justify-center shadow-md transition-transform duration-500  group-hover:scale-110`}
                   >
-                    <img src={card.icon} alt="bus-img" className="w-6" />
+                    <Image
+                      src={card.icon}
+                      alt="bus-img"
+                      width={24}
+                      height={24}
+                      className="w-6 h-6"
+                      placeholder="blur"
+                      blurDataURL={card.icon}
+                      priority={i === 0}
+                    />
                   </div>
 
                   {/* Text */}
@@ -104,8 +114,6 @@ function SecondSection() {
           </div>
         </div>
       </div>
-
-      
     </>
   );
 }

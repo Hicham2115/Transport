@@ -6,7 +6,7 @@ import SplitText from "@/components/SplitText";
 
 function FirstSection() {
   return (
-    <section className="relative py-20 px-6 md:px-16 -mt-20 overflow-hidden text-white!">
+    <section className="relative py-20 px-6 md:px-16 mt-20 overflow-hidden text-white!">
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left: Text Block */}
         <div className="flex flex-col justify-center gap-6">

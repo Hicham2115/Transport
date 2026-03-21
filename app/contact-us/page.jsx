@@ -134,13 +134,13 @@ function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-10">
+        <div className=" gap-10">
           {/* Form */}
           <div
             className="lg:col-span-2 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
-            <div className="rounded-2xl p-8 sm:p-10 border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md">
+            <div className="rounded-2xl p-8 w-full sm:p-10 border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md">
               <div className="flex items-center gap-3 mb-10">
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center"
@@ -450,12 +450,12 @@ function Contact() {
             </div>
           </div>
 
-          {/* Sidebar */}
-          <div
+         
+          {/* <div
             className="space-y-6 animate-fade-in-up"
             style={{ animationDelay: "0.4s" }}
           >
-            {/* Company card */}
+            
             <div
               className="rounded-2xl p-6 border border-[#5028ff]/30 backdrop-blur-md"
               style={{
@@ -509,7 +509,6 @@ function Contact() {
               </div>
             </div>
 
-            {/* Why us card */}
             <div
               className="rounded-2xl p-6 border border-[#5028ff]/30 backdrop-blur-md"
               style={{
@@ -543,7 +542,7 @@ function Contact() {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

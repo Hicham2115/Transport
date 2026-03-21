@@ -11,6 +11,8 @@ import img3 from "@/app/assets/piotrek-bSGFdq_WkEM-unsplash.jpg";
 import stars from "@/app/assets/rating.png";
 
 import Image from "next/image";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 function DemanderDevis() {
   return (
@@ -54,6 +56,13 @@ function DemanderDevis() {
               pour vous.
             </p>
 
+            <div className="mt-4">
+              <Link href="/contact-us">
+                <Button className="group relative overflow-hidden rounded-none px-10 py-5 text-xs tracking-[0.25em] uppercase font-semibold text-white bg-gradient-to-r from-[#5226ff] to-[#e060cb] transition-colors duration-500 cursor-pointer">
+                  Demander Un Devis
+                </Button>
+              </Link>
+            </div>
             <div className="mt-10 rounded-2xl border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl p-6 max-w-2xl mx-auto">
               {/* Header */}
               <div className="flex items-center gap-3 mb-4">

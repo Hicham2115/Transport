@@ -99,7 +99,7 @@ function page() {
         />
         <Hero />
       </div>
-      <div
+      {/* <div
         style={{
           height: "200px",
           position: "relative",
@@ -117,7 +117,7 @@ function page() {
           fadeOut
           useCustomRender={false}
         />
-      </div>
+      </div> */}
       <FirstSection />
       <SecondSection />
       <div id="Services">
