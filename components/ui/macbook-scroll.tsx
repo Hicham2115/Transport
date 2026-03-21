@@ -9,16 +9,6 @@ import img5 from "@/app/assets/thierry-biland-W0jw6ROdykI-unsplash.jpg";
 import Image from "next/image";
 
 export default function MacbookScrollCards() {
-  const ref = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-
-  const rotate = useTransform(scrollYProgress, [0.1, 0.3], [-20, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.3], [0.8, 1]);
-
   const cards = [
     {
       title: "Vans de 6 à 8 places",
@@ -43,22 +33,19 @@ export default function MacbookScrollCards() {
   ];
 
   return (
-    <div
-      ref={ref}
-      className="min-h-[200vh] flex flex-col items-center justify-center py-40"
-    >
+    <div className="min-h-[200vh] flex flex-col items-center justify-center py-40">
       <h2 className="text-3xl font-bold text-center">
         Quelles sont les différentes catégories de bus ?
       </h2>
 
       <motion.div
-        style={{ rotateX: rotate, scale }}
-        className="flex flex-wrap justify-center gap-10 perspective-[1000px]"
+        // style={{ rotateX: rotate, scale }}
+        className="flex flex-wrap mt-10 justify-center gap-10 perspective-[1000px]"
       >
         {cards.map((card, i) => (
           <div
             key={i}
-            className="w-full sm:w-[45%] lg:w-[40%] rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl"
+            className="w-full sm:w-[45%] transition-transform duration-300 hover:-translate-y-2 lg:w-[40%] rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl"
           >
             {/* Image */}
             <div className="relative h-48 w-full">
@@ -78,7 +65,7 @@ export default function MacbookScrollCards() {
           </div>
         ))}
       </motion.div>
-      <div className="w-full sm:w-[45%] lg:w-[40%] mt-10 rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl">
+      <div className="w-full transition-transform duration-300 hover:-translate-y-2 sm:w-[45%] lg:w-[40%] mt-10 rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl">
         {/* Image */}
         <div className="relative h-48 w-full">
           <Image
@@ -90,7 +77,7 @@ export default function MacbookScrollCards() {
         </div>
 
         {/* Content */}
-        <div className="p-4">
+        <div className="p-4" >
           <h3 className="text-white font-semibold text-lg">
             Autocars de 50 passagers et plus
           </h3>
