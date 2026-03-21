@@ -49,7 +49,7 @@ function SecondSection() {
           et minibus avec chauffeur. Nous proposons des solutions de transport
           fiables, adaptées à tous types de déplacements, avec un service
           rapide, des prix compétitifs et un accompagnement personnalisé."
-            className="text-xl md:text-lg max-w-3xl mx-auto text-gray-300 -mt-4 px-4"
+            className="text-sm md:text-lg max-w-3xl mx-auto text-gray-300 -mt-4 px-4"
             delay={15}
             duration={0.3}
             ease="power2.out"

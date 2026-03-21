@@ -53,12 +53,12 @@ export default function MacbookScrollCards() {
 
       <motion.div
         style={{ rotateX: rotate, scale }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-10 perspective-[1000px]"
+        className="flex flex-wrap justify-center gap-10 perspective-[1000px]"
       >
         {cards.map((card, i) => (
           <div
             key={i}
-            className="w-[420px] rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl"
+            className="w-full sm:w-[45%] lg:w-[40%] rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl"
           >
             {/* Image */}
             <div className="relative h-48 w-full">
@@ -78,7 +78,7 @@ export default function MacbookScrollCards() {
           </div>
         ))}
       </motion.div>
-      <div className="w-[80%] mt-10 rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl">
+      <div className="w-full sm:w-[45%] lg:w-[40%] mt-10 rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl">
         {/* Image */}
         <div className="relative h-48 w-full">
           <Image

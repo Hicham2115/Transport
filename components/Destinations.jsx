@@ -53,45 +53,48 @@ function Destinations() {
           Destinations
         </h1>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-8 flex-wrap max-w-6xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {cards.map((card, i) => (
             <div
-              className="w-[40%] mt-10 rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl"
               key={i}
+              className="w-full rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl transition-transform duration-300 hover:-translate-y-2"
             >
               {/* Image */}
-              <div className="relative h-48 w-full">
+              <div className="relative w-full h-40 sm:h-48 md:h-52">
                 <Image
                   src={card.icon}
-                  alt={"Bus de luxe"}
+                  alt="Bus de luxe"
                   fill
                   className="object-cover"
                 />
               </div>
 
               {/* Content */}
-              <div className="p-4">
-                <h3 className="text-white font-semibold text-lg">
+              <div className="p-4 sm:p-5">
+                <h3 className="text-white font-semibold text-base sm:text-lg">
                   {card.title}
                 </h3>
+
                 <p className="text-gray-400 text-sm mt-2">{card.description}</p>
 
-                <Dialog >
+                <Dialog>
                   <DialogTrigger asChild>
-                    <div className="flex items-center justify-center text-center gap-1 group text-sm font-semibold hover:text-[#8c64ff] transition-colors duration-300 cursor-pointer mt-4">
+                    <div className="flex items-center justify-center gap-1 group text-sm font-semibold hover:text-[#8c64ff] transition-colors duration-300 cursor-pointer mt-4">
                       <span>EN SAVOIR PLUS</span>
                       <span className="transition-transform duration-300 group-hover:translate-x-1">
                         ▶
                       </span>
                     </div>
                   </DialogTrigger>
-                  <DialogContent className="text-white border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl">
+
+                  <DialogContent className="text-white border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl w-[95vw] max-w-lg">
                     <DialogHeader>
                       <DialogTitle>Scrollable Content</DialogTitle>
                       <DialogDescription>
                         This is a dialog with scrollable content.
                       </DialogDescription>
                     </DialogHeader>
+
                     <div className="-mx-4 no-scrollbar max-h-[50vh] overflow-y-auto px-4">
                       {Array.from({ length: 10 }).map((_, index) => (
                         <p key={index} className="mb-4 leading-normal">

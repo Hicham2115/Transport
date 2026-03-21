@@ -13,12 +13,12 @@ function Services() {
         {/* Left: Text Block */}
         <div className="flex flex-col justify-center gap-6">
           <h2
-            className="text-5xl md:text-6xl font-serif leading-tight "
+            className="text-4xl md:text-6xl font-serif leading-tight "
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             VOTRE CONFORT
             <br />
-            <em className="italic text-5xl whitespace-nowrap">
+            <em className="italic text-xl md:text-5xl whitespace-nowrap">
               ET VOTRE SATISFACTION
             </em>
           </h2>
@@ -27,10 +27,10 @@ function Services() {
             Présentation
           </h1>
           <p
-            className=" leading-relaxed text-base max-w-lg"
+            className=" leading-relaxed max-w-lg text-sm md:text-lg"
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "1.1rem",
+              // fontSize: "1.1rem",
             }}
           >
             Fort de son expérience dans le transport, SO.TRA.CARS met tout en
@@ -59,9 +59,8 @@ function Services() {
         continu, du temps de conduite journalier, des temps de pause etc…
       </p>
       <br />
-      <div className="flex gap-6">
+      <div className="flex gap-6 flex-wrap">
         <div>
-          {" "}
           <h1 className="text-2xl md:text-3xl font-serif leading-tight ">
             Qualité de nos partenaires
           </h1>
