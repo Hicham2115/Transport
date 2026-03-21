@@ -3,7 +3,7 @@ import busIcon from "@/app/assets/busIcon.png";
 import clientIcon from "@/app/assets/clientIcon.png";
 import priceIcon from "@/app/assets/priceIcon.png";
 import Image from "next/image";
-import SplitText from "@/components/SplitText";
+import SplitText from "@/components/ui/SplitText";
 
 function SecondSection() {
   const cards = [

@@ -29,7 +29,7 @@ import {
 } from "@/components/ui/popover";
 import { format } from "date-fns";
 import { ChevronDownIcon } from "lucide-react";
-import Aurora from "@/components/Aurora";
+import Aurora from "@/components/ui/Aurora";
 
 function Contact() {
   const [date, setDate] = React.useState();
@@ -450,7 +450,6 @@ function Contact() {
             </div>
           </div>
 
-         
           {/* <div
             className="space-y-6 animate-fade-in-up"
             style={{ animationDelay: "0.4s" }}

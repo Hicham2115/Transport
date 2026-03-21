@@ -1,28 +1,28 @@
 "use client";
 import Hyperspeed from "@/components/Background/Hyperspeed";
-import Hero from "@/components/Hero";
-import FirstSection from "@/components/FirstSection";
-import SecondSection from "@/components/SecondSection";
+import Hero from "@/components/MainSection/Hero";
+import FirstSection from "@/components/MainSection/FirstSection";
+import SecondSection from "@/components/MainSection/SecondSection";
 import img11 from "@/app/assets/SliderImgs/Frame-17-2.png";
 import img12 from "@/app/assets/SliderImgs/Frame-18-2.png";
 import img13 from "@/app/assets/SliderImgs/Frame-19-2.png";
 import img14 from "@/app/assets/SliderImgs/Frame-20-2.png";
 import img15 from "@/app/assets/SliderImgs/Frame-21-2.png";
 import img16 from "@/app/assets/SliderImgs/Frame-22-2.png";
-import LogoLoop from "@/components/LogoLoop";
+import LogoLoop from "@/components/ui/LogoLoop";
 import {
   SiReact,
   SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
 } from "react-icons/si";
-import ThirdSection from "@/components/ThirdSection";
-import FaQ from "@/components/FAQ";
-import DemanderDevis from "@/components/DemanderDevis";
+import ThirdSection from "@/components/MainSection/ThirdSection";
+import FaQ from "@/components/MainSection/FAQ";
+import DemanderDevis from "@/components/MainSection/DemanderDevis";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import MacbookScroll from "@/components/ui/macbook-scroll";
-import Destinations from "@/components/Destinations";
-import Services from "@/components/Services";
+import Destinations from "@/components/MainSection/Destinations";
+import Services from "@/components/MainSection/Services";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 

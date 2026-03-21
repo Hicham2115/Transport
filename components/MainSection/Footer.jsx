@@ -9,7 +9,6 @@ import {
   Twitter,
   ArrowRight,
 } from "lucide-react";
-
 function Footer() {
   const currentYear = new Date().getFullYear();
 

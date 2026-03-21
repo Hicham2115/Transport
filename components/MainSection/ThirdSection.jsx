@@ -1,8 +1,7 @@
-import Image from "next/image";
-
 import temps from "@/app/assets/temps.png";
 import économique from "@/app/assets/économique.png";
 import besoins from "@/app/assets/besoins.png";
+import Image from "next/image";
 
 function ThirdSection() {
   const features = [

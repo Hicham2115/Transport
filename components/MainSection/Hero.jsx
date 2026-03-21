@@ -1,8 +1,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import TextType from "@/components/TextType";
+import TextType from "@/components/ui/TextType";
 import { color } from "framer-motion";
-import ShinyText from "@/components/ShinyText";
+import ShinyText from "@/components/ui/ShinyText";
 
 function Hero() {
   return (

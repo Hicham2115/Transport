@@ -11,7 +11,7 @@ import img3 from "@/app/assets/piotrek-bSGFdq_WkEM-unsplash.jpg";
 import stars from "@/app/assets/rating.png";
 
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 function DemanderDevis() {

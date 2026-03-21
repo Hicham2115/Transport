@@ -1,8 +1,8 @@
 import Image from "next/image";
 import img10 from "@/app/assets/bus1.jpg";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import Link from "next/link";
-import SplitText from "@/components/SplitText";
+import SplitText from "@/components/ui/SplitText";
 
 function FirstSection() {
   return (
@@ -83,7 +83,7 @@ function FirstSection() {
             une solution idéale pour faciliter les déplacements de groupes lors
             d’événements professionnels ou de sorties diverses.
           </p> */}
-  <SplitText
+          <SplitText
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.1rem",
