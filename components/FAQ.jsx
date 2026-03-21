@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 function FAQ() {
   return (
@@ -21,14 +22,16 @@ function FAQ() {
         </p>
 
         <div className="flex gap-4 mt-6">
-          <button
-            className="px-4 py-2 rounded-md text-white font-semibold cursor-pointer
-            bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
-            shadow-lg hover:bg-white/20 transition-all duration-300"
+          <Link href="/#DemanderUnDevis">
+            <button
+              className="px-4 py-2 rounded-md text-white font-semibold cursor-pointer
+              bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
+              shadow-lg hover:bg-white/20 transition-all duration-300"
           >
             Demander Un Devis
           </button>
-
+          </Link>
+            <Link href="/contact-us">
           <button
             className="px-4 py-2 rounded-md text-white font-semibold cursor-pointer
             bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
@@ -36,6 +39,7 @@ function FAQ() {
           >
             Contact Us
           </button>
+          </Link>
         </div>
       </div>
 

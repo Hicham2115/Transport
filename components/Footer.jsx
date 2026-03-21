@@ -17,7 +17,7 @@ function Footer() {
     { name: "Home", href: "/" },
     { name: "Services", href: "/#Services" },
     { name: "Autocars", href: "/#AboutUs" },
-    { name: "Destinations", href: "/#Portfolio" },
+    { name: "Destinations", href: "/#Destinations" },
     { name: "Demander un devis", href: "/contact-us" },
   ];
 
