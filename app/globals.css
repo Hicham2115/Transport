@@ -127,6 +127,7 @@
     @apply font-sans;
   }
 }
-* {
-  cursor: none !important;
+
+html {
+  scroll-behavior: smooth;
 }

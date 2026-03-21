@@ -77,36 +77,34 @@ export default function MacbookScrollCards() {
             </div>
           </div>
         ))}
-        
       </motion.div>
       <div className="w-[80%] mt-10 rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl">
-          {/* Image */}
-          <div className="relative h-48 w-full">
-            <Image
-              src={img5.src}
-              alt={"Bus de luxe"}
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          {/* Content */}
-          <div className="p-4">
-            <h3 className="text-white font-semibold text-lg">
-              Autocars de 50 passagers et plus
-            </h3>
-            <p className="text-gray-400 text-sm mt-2">
-              Idéals pour les très grands voyages ou les événements importants
-              car ils permettent de rassembler un grand nombre de personnes dans
-              un seul autocar. Équipement : Grande soute à bagages,
-              réfrigérateur, toilettes, lecteur DVD, ceintures de sécurité,
-              prises électriques, climatisation, sièges inclinables, accès PMR,
-              GPS, trousse de premiers soins, wifi, tablettes… En cas
-              d’équipement spécial merci de nous en avertir avant la
-              réservation.
-            </p>
-          </div>
+        {/* Image */}
+        <div className="relative h-48 w-full">
+          <Image
+            src={img5.src}
+            alt={"Bus de luxe"}
+            fill
+            className="object-cover"
+          />
         </div>
+
+        {/* Content */}
+        <div className="p-4">
+          <h3 className="text-white font-semibold text-lg">
+            Autocars de 50 passagers et plus
+          </h3>
+          <p className="text-gray-400 text-sm mt-2">
+            Idéals pour les très grands voyages ou les événements importants car
+            ils permettent de rassembler un grand nombre de personnes dans un
+            seul autocar. Équipement : Grande soute à bagages, réfrigérateur,
+            toilettes, lecteur DVD, ceintures de sécurité, prises électriques,
+            climatisation, sièges inclinables, accès PMR, GPS, trousse de
+            premiers soins, wifi, tablettes… En cas d’équipement spécial merci
+            de nous en avertir avant la réservation.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

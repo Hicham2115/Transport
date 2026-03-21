@@ -1,6 +1,5 @@
 "use client";
 import Hyperspeed from "@/components/Background/Hyperspeed";
-import Navbar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import FirstSection from "@/components/FirstSection";
 import SecondSection from "@/components/SecondSection";
@@ -24,9 +23,10 @@ import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import MacbookScroll from "@/components/ui/macbook-scroll";
 import Destinations from "@/components/Destinations";
 import Services from "@/components/Services";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 function page() {
-  
   const techLogos = [
     { src: img11.src, title: "React" },
     { src: img12.src, title: "TypeScript" },
@@ -36,9 +36,29 @@ function page() {
     { src: img16.src, title: "Tailwind CSS" },
   ];
 
+  function ScrollToTop() {
+    const pathname = usePathname();
+
+    useEffect(() => {
+      const hash = window.location.hash;
+
+      if (hash) {
+        const element = document.getElementById(hash.replace("#", ""));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }, [pathname]);
+
+    return null;
+  }
+
   return (
     <div>
-      <Navbar />
+      <ScrollToTop />
+
       <div style={{ position: "relative", width: "100%", minHeight: "300px" }}>
         <Hyperspeed
           effectOptions={{
@@ -103,14 +123,18 @@ function page() {
       <div id="Services">
         <Services />
       </div>
-      <DemanderDevis />
+      <div id="DemanderUnDevis">
+        <DemanderDevis />
+      </div>
       <ThirdSection />
       <FaQ />
-      <SmoothCursor />
+      {/* <SmoothCursor /> */}
       <div id="Autocars">
         <MacbookScroll />
       </div>
-      <Destinations />
+      <div id="Destinations">
+        <Destinations />
+      </div>
     </div>
   );
 }
