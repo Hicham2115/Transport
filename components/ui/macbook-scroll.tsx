@@ -2,9 +2,9 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import img1 from "@/app/assets/bournes-senruob-7npXwp8D_Kk-unsplash.jpg";
-import img2 from "@/app/assets/manh-lai-van-xCe01R-lBio-unsplash.jpg";
-import img3 from "@/app/assets/paul-caruso-hrFRtbyKKpg-unsplash.jpg";
-import img4 from "@/app/assets/paul-stewart-_tb6IoNv7u0-unsplash.jpg";
+import img2 from "@/app/assets/manh-lai-van-xCe01R-lBio-unsplash.png";
+import img3 from "@/app/assets/paul.jpg";
+import img4 from "@/app/assets/paul2.jpg";
 import img5 from "@/app/assets/thierry-biland-W0jw6ROdykI-unsplash.jpg";
 import Image from "next/image";
 
@@ -77,7 +77,7 @@ export default function MacbookScrollCards() {
         </div>
 
         {/* Content */}
-        <div className="p-4" >
+        <div className="p-4">
           <h3 className="text-white font-semibold text-lg">
             Autocars de 50 passagers et plus
           </h3>

@@ -5,9 +5,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import img1 from "@/app/assets/fachy-marin-p_ILi6tlMwM-unsplash.jpg";
+import img1 from "@/app/assets/fachy-marin-p_ILi6tlMwM-unsplash.png";
 import img2 from "@/app/assets/jeswin-thomas-iIGovKRty8g-unsplash.jpg";
-import img3 from "@/app/assets/piotrek-bSGFdq_WkEM-unsplash.jpg";
+import img3 from "@/app/assets/piotrek-bSGFdq_WkEM-unsplash.png";
 import stars from "@/app/assets/rating.png";
 
 import Image from "next/image";
