@@ -49,42 +49,45 @@ function Services() {
           <Lottie animationData={animationData} loop={true} />
         </div>
       </div>
-      <h1 className="text-2xl md:text-4xl font-serif leading-tight ">
-        Législation
-      </h1>
-      <p className=" leading-relaxed text-base w-max-lg">
-        Dans le respect des réglementations françaises et européenne
-        SO.TRA.CARS, location de bus avec chauffeur à Paris, veille à employer
-        des partenaires rigoureux, notamment dans le cadre du temps de conduite
-        continu, du temps de conduite journalier, des temps de pause etc…
-      </p>
-      <br />
-      <div className="flex gap-6 flex-wrap">
-        <div>
-          <h1 className="text-2xl md:text-3xl font-serif leading-tight ">
-            Qualité de nos partenaires
-          </h1>
-          <p className=" leading-relaxed w-max-lg text-sm italic mt-2 mb-2">
-            Nous collaborons avec des autocaristes professionnels selon des
-            critères stricts.
-          </p>
-          <ul className="list-disc pl-6">
-            <li>L’accueil client</li>
-            <li>Le confort</li>
-            <li>La sécurité</li>
-            <li>La ponctualité</li>
-            <li>Le matériel</li>
-          </ul>
-        </div>
+      <div className="relative z-10 max-w-6xl mx-auto grid gap-9 items-center">
+        <h1 className="text-2xl md:text-4xl font-serif leading-tight ">
+          Législation
+        </h1>
+        <p className=" leading-relaxed text-base w-max-lg -mt-4">
+          Dans le respect des réglementations françaises et européenne
+          SO.TRA.CARS, location de bus avec chauffeur à Paris, veille à employer
+          des partenaires rigoureux, notamment dans le cadre du temps de
+          conduite continu, du temps de conduite journalier, des temps de pause
+          etc…
+        </p>
+        <br />
+        <div className="flex gap-6 flex-wrap">
+          <div>
+            <h1 className="text-2xl md:text-3xl font-serif leading-tight ">
+              Qualité de nos partenaires
+            </h1>
+            <p className=" leading-relaxed w-max-lg text-sm italic mt-2 mb-2">
+              Nous collaborons avec des autocaristes professionnels selon des
+              critères stricts.
+            </p>
+            <ul className="list-disc pl-6">
+              <li>L’accueil client</li>
+              <li>Le confort</li>
+              <li>La sécurité</li>
+              <li>La ponctualité</li>
+              <li>Le matériel</li>
+            </ul>
+          </div>
 
-        <div className="relative w-[550px] h-[400px] md:h-[200px] lg:h-[300px]">
-          <Image
-            src={img1}
-            alt="Service Image"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-2xl "
-          />
+          <div className="relative w-[550px] h-[400px] md:h-[200px] lg:h-[300px]">
+            <Image
+              src={img1}
+              alt="Service Image"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-2xl "
+            />
+          </div>
         </div>
       </div>
     </section>
