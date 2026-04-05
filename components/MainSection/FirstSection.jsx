@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img10 from "@/app/assets/bus1.jpg";
+import img10 from "@/app/assets/Gemini_Generated_Image_qclc80qclc80qclc.png";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import SplitText from "@/components/ui/SplitText";
