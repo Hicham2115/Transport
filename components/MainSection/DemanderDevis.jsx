@@ -107,9 +107,9 @@ function DemanderDevis() {
           </div>
 
           {/* IMAGE GRID */}
-          <div className="grid grid-cols-2 grid-rows-2 gap-3 h-[480px] md:w-1/2 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-3 w-full md:w-1/2 sm:h-120">
             {/* Tall left image */}
-            <div className="row-span-2 relative w-full h-full group overflow-hidden rounded-2xl shadow-xl">
+            <div className="relative w-full min-h-60 aspect-4/3 sm:aspect-auto sm:min-h-0 sm:h-full sm:row-span-2 group overflow-hidden rounded-2xl shadow-xl">
               <Image
                 src={img2}
                 alt="Bus image"
@@ -121,7 +121,7 @@ function DemanderDevis() {
             </div>
 
             {/* Top right */}
-            <div className="relative w-full h-full group overflow-hidden rounded-2xl shadow-md">
+            <div className="relative w-full min-h-50 aspect-4/3 sm:aspect-auto sm:min-h-0 sm:h-full group overflow-hidden rounded-2xl shadow-md">
               <Image
                 src={img1}
                 alt="Bus image"
@@ -133,7 +133,7 @@ function DemanderDevis() {
             </div>
 
             {/* Bottom right */}
-            <div className="relative w-full h-full group overflow-hidden rounded-2xl shadow-md">
+            <div className="relative w-full min-h-50 aspect-4/3 sm:aspect-auto sm:min-h-0 sm:h-full group overflow-hidden rounded-2xl shadow-md">
               <Image
                 src={img3}
                 alt="Bus image"
