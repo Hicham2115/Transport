@@ -67,8 +67,8 @@ function FAQ() {
               Dans quelles zones intervenez-vous ?
             </AccordionTrigger>
             <AccordionContent className="text-gray-300">
-              SOTRACARS France intervient partout en France ainsi que dans
-              plusieurs destinations en Europe grâce à son large réseau de
+              Next Way Transport France intervient partout en France ainsi que
+              dans plusieurs destinations en Europe grâce à son large réseau de
               partenaires transporteurs.
             </AccordionContent>
           </AccordionItem>

@@ -89,7 +89,7 @@ function FirstSection() {
               fontSize: "1.1rem",
             }}
             text="Grâce à son réseau composé de partenaires à travers la France,
-            SOTRACARS France est spécialisé dans la location de bus et minibus
+            Next Way Transport France est spécialisé dans la location de bus et minibus
             avec chauffeur que ce soit pour des séminaires d’entreprises, des
             agences évènementielles, établissements scolaires et autres…"
             className="leading-relaxed text-base max-w-lg"
@@ -111,7 +111,7 @@ function FirstSection() {
             }}
           >
             Grâce à son réseau composé de partenaires à travers la France,
-            SOTRACARS France est spécialisé dans la location de bus et minibus
+            Next Way Transport France est spécialisé dans la location de bus et minibus
             avec chauffeur que ce soit pour des séminaires d’entreprises, des
             agences évènementielles, établissements scolaires et autres…
           </p> */}
