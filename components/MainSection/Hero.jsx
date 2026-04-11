@@ -7,7 +7,7 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div className="text-center py-20 px-4 md:px-8 lg:px-16 space-y-6 -mt-4">
+    <div className="text-center py-20 px-4 md:px-8 lg:px-16 space-y-6 mt-10">
       <TextType
         text={["Location De Bus, Minibus Et Autocar Avec Chauffeur"]}
         typingSpeed={75}
