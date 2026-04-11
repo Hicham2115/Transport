@@ -110,10 +110,11 @@ function Page() {
         <div id="DemanderUnDevis">
           <DemanderDevis />
         </div>
+        <div id="FAQ">
+          <ThirdSection />
+        </div>
 
-        <ThirdSection />
         <FaQ />
-
         <div id="Autocars">
           <MacbookScroll />
         </div>

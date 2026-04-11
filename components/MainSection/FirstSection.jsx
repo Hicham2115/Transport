@@ -117,10 +117,10 @@ function FirstSection() {
           </p> */}
 
           <div className="mt-4">
-            <Link href="/">
+            <Link href="/contact-us">
               {" "}
               <Button className="group relative overflow-hidden rounded-none px-10 py-5 text-xs tracking-[0.25em] uppercase font-semibold text-white bg-gradient-to-r from-[#5226ff] to-[#e060cb] transition-colors duration-500 cursor-pointer">
-                Discover Collection
+                Demander Un Devis
               </Button>
             </Link>
           </div>

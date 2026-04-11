@@ -22,7 +22,7 @@ function FAQ() {
         </p>
 
         <div className="flex gap-4 mt-6">
-          <Link href="/#DemanderUnDevis">
+          {/* <Link href="/#DemanderUnDevis">
             <button
               className="px-4 py-2 rounded-md text-white font-semibold cursor-pointer
               bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
@@ -30,10 +30,10 @@ function FAQ() {
             >
               Demander Un Devis
             </button>
-          </Link>
+          </Link> */}
           <Link href="/contact-us">
             <button
-              className="px-4 py-2 rounded-md text-white font-semibold cursor-pointer
+              className="px-4 py-2 rounded-sm text-white font-semibold cursor-pointer
             bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
             shadow-lg hover:bg-white/20 transition-all duration-300"
             >

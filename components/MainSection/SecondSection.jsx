@@ -4,6 +4,7 @@ import clientIcon from "@/app/assets/clientIcon.png";
 import priceIcon from "@/app/assets/priceIcon.png";
 import Image from "next/image";
 import SplitText from "@/components/ui/SplitText";
+import Link from "next/link";
 
 function SecondSection() {
   const cards = [
@@ -102,12 +103,14 @@ function SecondSection() {
                   </div>
 
                   {/* Explore link */}
-                  <div className="flex items-center gap-1 text-sm font-semibold text-[#8c64ff] group-hover:text-white transition-colors duration-300 cursor-pointer mt-1">
-                    <span>EN SAVOIR PLUS</span>
-                    <span className="transition-transform duration-300 group-hover:translate-x-1">
-                      ▶
-                    </span>
-                  </div>
+                  <Link href="#FAQ">
+                    <div className="flex items-center gap-1 text-sm font-semibold text-[#8c64ff] group-hover:text-white transition-colors duration-300 cursor-pointer mt-1">
+                      <span>EN SAVOIR PLUS</span>
+                      <span className="transition-transform duration-300 group-hover:translate-x-1">
+                        ▶
+                      </span>
+                    </div>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
