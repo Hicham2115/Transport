@@ -15,7 +15,7 @@ function ThirdSection() {
       title: "Économisez votre temps !",
       icon: temps,
       description:
-        "Next Way Transport France simplifie l'organisation en prenant en charge toute la logistique pour vos déplacements.",
+        "Next Way Transport simplifie l'organisation en prenant en charge toute la logistique pour vos déplacements.",
     },
     {
       title: "On s'adapte à vos besoins",
