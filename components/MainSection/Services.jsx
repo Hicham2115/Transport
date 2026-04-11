@@ -79,13 +79,13 @@ function Services() {
             </ul>
           </div>
 
-          <div className="relative w-[550px] h-[400px] md:h-[200px] lg:h-[300px]">
+          <div className="relative w-full sm:w-[550px] min-h-56 h-[260px] sm:h-[320px] md:h-[220px] lg:h-[300px]">
             <Image
               src={img1}
               alt="Service Image"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-2xl "
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 550px, 550px"
+              className="rounded-2xl object-cover"
             />
           </div>
         </div>
