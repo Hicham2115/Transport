@@ -466,7 +466,7 @@ function Contact() {
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
                   <Sparkles className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-black">DEMO NAME</h3>
+                <h3 className="text-xl font-black">NEXT WAY TRANSPORT</h3>
               </div>
 
               <div className="space-y-3">

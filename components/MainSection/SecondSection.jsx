@@ -39,7 +39,7 @@ function SecondSection() {
           </h1>
 
           <h1 className="text-xl md:text-3xl font-black tracking-tight -mt-4 text-white">
-            DEMO Name
+            NEXT WAY TRANSPORT
           </h1>
           <SplitText
             style={{

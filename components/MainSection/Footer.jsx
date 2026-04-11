@@ -9,6 +9,8 @@ import {
   Twitter,
   ArrowRight,
 } from "lucide-react";
+import Logo from "@/app/assets/nextway_logo_transparent_4k.png";
+
 function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -46,7 +48,7 @@ function Footer() {
           <div className="flex flex-col gap-5">
             <div>
               <span className="text-2xl font-bold tracking-tight">
-                DEMO <span className="text-[#8164f3]">NAME</span>
+                NEXT WAY <span className="text-[#8164f3]">TRANSPORT</span>
               </span>
               <p className="mt-3 text-sm text-white/50 leading-relaxed max-w-xs">
                 Voyagez en toute sérénité. Transport premium, destinations
@@ -113,7 +115,7 @@ function Footer() {
         {/* Bottom */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-white/30">
-            &copy; {currentYear} DEMO NAME. Tous droits réservés.
+            &copy; {currentYear} NEXT WAY TRANSPORT. Tous droits réservés.
           </p>
 
           <div className="flex gap-5">

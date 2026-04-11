@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/popover";
 // import UniCorne from "@/assets/unicorn.png";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "@/app/assets/nextway_logo_transparent_4k.png";
 
 const navigationLinks = [
   { href: "/", label: "Home" },
@@ -105,11 +107,10 @@ export default function Component() {
           {/* Logo */}
           <a className="text-primary hover:text-primary/90" href="#">
             <div className="flex gap-2">
-              {/* <img src={UniCorne} alt="logo" width="26px" /> */}
-              <span className="text-xl font-bold tracking-wider text-white">
-                DEMO NAME
-                {/* <span className="text-[#5226ff]">ADVERTISING</span> */}
-              </span>
+              <Image src={Logo} alt="logo" priority className="h-20 w-auto" />
+              {/* <span className="text-xl font-bold tracking-wider text-white">
+                NEXT WAY TRANSPORT
+              </span> */}
             </div>
           </a>
 

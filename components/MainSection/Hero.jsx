@@ -21,7 +21,7 @@ function Hero() {
 
       {/* Subheading */}
       {/* <ShinyText
-        text="      DEMO NAME : votre intermédiaire spécialisé dans la mise en relation pour
+        text="      NEXT WAY TRANSPORT : votre intermédiaire spécialisé dans la mise en relation pour
         la location de bus avec chauffeur"
         speed={2}
         delay={0}
@@ -40,8 +40,8 @@ function Hero() {
         }}
         className="text-md md:text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up"
       >
-        DEMO NAME : votre intermédiaire spécialisé dans la mise en relation pour
-        la location de bus avec chauffeur
+        NEXT WAY TRANSPORT : votre intermédiaire spécialisé dans la mise en
+        relation pour la location de bus avec chauffeur
       </p>
       <div
         className="flex flex-col sm:flex-row justify-center gap-4 items-center animate-fade-in-up mb-6"
@@ -50,7 +50,7 @@ function Hero() {
         {/* <Link to="contact-us"> */}
         <div className="flex flex-col sm:flex-row gap-4 sm:px-4">
           <button
-            className="w-full sm:w-auto px-5 py-3 sm:px-3 sm:py-2 text-sm sm:text-base rounded-md text-white font-semibold cursor-pointer
+            className="w-full sm:w-auto px-5 py-3 sm:px-3 sm:py-2 text-sm sm:text-base rounded-sm  text-white font-semibold cursor-pointer
     bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
     shadow-lg hover:bg-white/20 transition-all duration-300"
           >
@@ -58,7 +58,7 @@ function Hero() {
           </button>
 
           <button
-            className="w-full sm:w-auto px-5 py-3 sm:px-3 sm:py-2 text-sm sm:text-base rounded-md text-white font-semibold cursor-pointer
+            className="w-full sm:w-auto px-5 py-3 sm:px-3 sm:py-2 text-sm sm:text-base rounded-sm  text-white font-semibold cursor-pointer
     bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
     shadow-lg hover:bg-white/20 transition-all duration-300"
           >

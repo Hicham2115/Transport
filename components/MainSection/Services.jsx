@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import animationData from "@/public/animations/Bus Transport.json";
 import Image from "next/image";
-import img1 from "@/app/assets/juan-encalada-6mcVaoGNz1w-unsplash.jpg";
+import img1 from "@/app/assets/Nextway Transport Reality.png";
 
 function Services() {
   return (
