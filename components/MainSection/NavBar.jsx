@@ -83,7 +83,7 @@ export default function Component() {
                       <button className="relative inline-flex h-10 active:scale-95 transition overflow-hidden rounded-lg p-[1px] focus:outline-none whitespace-nowrap ">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
                         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-5 text-sm font-medium text-white backdrop-blur-3xl gap-2">
-                          Contact me
+                          Contactez-nous
                           <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -139,13 +139,13 @@ export default function Component() {
                 size="sm"
                 variant="ghost"
               >
-                <Link href="/contact-us">Contact Us</Link>
+                <Link href="/contact-us">  Contactez-nous</Link>
               </Button> */}
               <Link href="/contact-us">
                 <button className="relative inline-flex h-10 active:scale-95 transition overflow-hidden cursor-pointer rounded-lg p-[1px] focus:outline-none">
                   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
                   <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-5 text-sm font-medium text-white backdrop-blur-3xl gap-2">
-                    Contact me
+                    Contactez-nous
                     <svg
                       stroke="currentColor"
                       fill="currentColor"

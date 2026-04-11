@@ -17,9 +17,9 @@ function Footer() {
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/#Services" },
-    { name: "Autocars", href: "/#AboutUs" },
+    { name: "Autocars", href: "/#Autocars" },
     { name: "Destinations", href: "/#Destinations" },
-    { name: "Demander un devis", href: "/contact-us" },
+    { name: "Demander un devis", href: "/#DemanderUnDevis" },
   ];
 
   const contactInfo = [
@@ -118,17 +118,17 @@ function Footer() {
             &copy; {currentYear} NEXT WAY TRANSPORT. Tous droits réservés.
           </p>
 
-          <div className="flex gap-5">
+          {/* <div className="flex gap-5">
             {["Services", "Autocars", "Destinations"].map((item) => (
               <a
                 key={item}
-                href="#"
+                href={`/#${item}`}
                 className="text-xs text-white/30 hover:text-white/60 transition-colors duration-200"
               >
                 {item}
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

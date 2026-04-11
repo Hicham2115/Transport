@@ -37,7 +37,7 @@ function FAQ() {
             bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap
             shadow-lg hover:bg-white/20 transition-all duration-300"
             >
-              Contact Us
+              Contactez-nous
             </button>
           </Link>
         </div>
