@@ -33,8 +33,8 @@ function Services() {
               // fontSize: "1.1rem",
             }}
           >
-            Fort de son expérience dans le transport, SO.TRA.CARS met tout en
-            œuvre pour obtenir la confiance de ses clients. <br /> Nos
+            Fort de son expérience dans le transport, Next Way Transport met
+            tout en œuvre pour obtenir la confiance de ses clients. <br /> Nos
             conseillers sont formés pour vous aider à planifier votre trajet et
             à trouver la bonne offre pour réaliser au mieux votre projet.
             Découvrez nos services de location de bus pour séminaire
@@ -54,8 +54,8 @@ function Services() {
           Législation
         </h1>
         <p className=" leading-relaxed text-base w-max-lg -mt-4">
-          Dans le respect des réglementations françaises et européenne
-          SO.TRA.CARS, location de bus avec chauffeur à Paris, veille à employer
+          Dans le respect des réglementations françaises et européenne Next Way
+          Transport, location de bus avec chauffeur à Paris, veille à employer
           des partenaires rigoureux, notamment dans le cadre du temps de
           conduite continu, du temps de conduite journalier, des temps de pause
           etc…

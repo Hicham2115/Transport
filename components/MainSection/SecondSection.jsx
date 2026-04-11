@@ -13,7 +13,7 @@ function SecondSection() {
       iconBg: "bg-gradient-to-br from-[#8c64ff] to-[#5226ff]",
       title: "TRANSPORT",
       description:
-        "Spécialiste de la location de bus et minibus avec chauffeur depuis de nombreuses années, SO.TRA.CARS vous garantit un service irréprochable.",
+        "Spécialiste de la location de bus et minibus avec chauffeur depuis de nombreuses années, Next Way Transport vous garantit un service irréprochable.",
     },
     {
       icon: clientIcon.src,
@@ -27,7 +27,7 @@ function SecondSection() {
       iconBg: "bg-gradient-to-br from-[#8c64ff] to-[#5226ff]",
       title: "PRIX ATTRACTIFS",
       description:
-        "De nombreux partenaires à travers la France SO.TRA.CARS vous propose les meilleurs prix selon votre trajet.",
+        "De nombreux partenaires à travers la France Next Way Transport vous propose les meilleurs prix selon votre trajet.",
     },
   ];
 
@@ -47,7 +47,7 @@ function SecondSection() {
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.1rem",
             }}
-            text="SO.TRA.CARS est votre partenaire de confiance pour la location de bus
+            text="Next Way Transport est votre partenaire de confiance pour la location de bus
           et minibus avec chauffeur. Nous proposons des solutions de transport
           fiables, adaptées à tous types de déplacements, avec un service
           rapide, des prix compétitifs et un accompagnement personnalisé."
@@ -63,7 +63,7 @@ function SecondSection() {
             textAlign="center"
           />
           {/* <p className="text-xl md:text-lg max-w-3xl mx-auto text-gray-300 -mt-4 px-4">
-          SO.TRA.CARS est votre partenaire de confiance pour la location de bus
+          Next Way Transport est votre partenaire de confiance pour la location de bus
           et minibus avec chauffeur. Nous proposons des solutions de transport
           fiables, adaptées à tous types de déplacements, avec un service
           rapide, des prix compétitifs et un accompagnement personnalisé.

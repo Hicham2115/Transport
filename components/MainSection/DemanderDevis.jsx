@@ -27,7 +27,7 @@ function DemanderDevis() {
           Vous voulez savoir combien coûte un transport en autocar ? Pour cela,
           il vous faut adresser une demande de devis location bus à notre
           équipe. <br />
-          Chez SO.TRA.CARS France, spécialiste dans la location de bus avec
+          Chez Next Way Transport, spécialiste dans la location de bus avec
           chauffeur, toutes les demandes sont aussi importantes les unes que les
           autres. <br />
           Ainsi, nous nous engageons à vous répondre dans les plus brefs délais.
@@ -95,11 +95,11 @@ function DemanderDevis() {
               <p className="text-white/70 text-sm leading-relaxed">
                 Organiser un événement familial n’est pas toujours simple,
                 surtout en ce qui concerne les déplacements et la coordination
-                des invités. SO.TRA.CARS s’est révélé être le prestataire le
-                mieux placé en termes de coût, tout en offrant un service fiable
-                et professionnel. Leur équipe a su proposer une solution adaptée
-                à nos besoins, avec une organisation fluide et sans stress.
-                Grâce à leur accompagnement, le transport s’est déroulé
+                des invités. Next Way Transport s’est révélé être le prestataire
+                le mieux placé en termes de coût, tout en offrant un service
+                fiable et professionnel. Leur équipe a su proposer une solution
+                adaptée à nos besoins, avec une organisation fluide et sans
+                stress. Grâce à leur accompagnement, le transport s’est déroulé
                 parfaitement, ce qui a grandement contribué à la réussite de
                 notre événement.
               </p>

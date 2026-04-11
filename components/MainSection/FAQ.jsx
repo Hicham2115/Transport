@@ -14,8 +14,8 @@ function FAQ() {
         <h1 className="font-black text-4xl">Foire Aux Questions</h1>
 
         <p className="text-sm mt-4 text-gray-300 max-w-md">
-          SO.TRA.CARS provides bus, minibus, and coach rental services with
-          professional drivers across France and Europe. The service helps
+          Next Way Transport provides bus, minibus, and coach rental services
+          with professional drivers across France and Europe. The service helps
           individuals and groups easily organize transport for events, trips,
           and business needs, offering quick quotes, reliable partners, and
           tailored travel solutions.
