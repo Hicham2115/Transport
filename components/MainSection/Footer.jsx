@@ -25,7 +25,7 @@ function Footer() {
   const contactInfo = [
     { icon: MapPin, text: "Paris France" },
     { icon: Phone, text: "+33 6 28 64 80 16" },
-    { icon: Mail, text: "contact@demoname.ma" },
+    { icon: Mail, text: "contact@nextway-transport.com" },
   ];
 
   const socials = [
