@@ -20,7 +20,7 @@ const navigationLinks = [
   { href: "/#Services", label: "Services" },
   { href: "/#Autocars", label: "Autocars" },
   { href: "/#Destinations", label: "Destinations" },
-  { href: "/#DemanderUnDevis", label: "Demander un devis" },
+  // { href: "/#DemanderUnDevis", label: "Demander un devis" },
 ];
 
 export default function Component() {
@@ -145,7 +145,7 @@ export default function Component() {
                 <button className="relative inline-flex h-10 active:scale-95 transition overflow-hidden cursor-pointer rounded-lg p-[1px] focus:outline-none">
                   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
                   <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-5 text-sm font-medium text-white backdrop-blur-3xl gap-2">
-                    Contactez-nous
+                    Demander un devis
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
