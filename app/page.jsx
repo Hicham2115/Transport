@@ -12,6 +12,7 @@ import Services from "@/components/MainSection/Services";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
+import SmoothScroll from "@/components/SmoothScroll";
 
 function Page() {
   const pathname = usePathname();
@@ -23,9 +24,9 @@ function Page() {
 
     if (hash) {
       const el = document.getElementById(hash.replace("#", ""));
-      if (el) el.scrollIntoView({ behavior: "smooth" });
+      if (el) el.scrollIntoView({ behavior: "auto" });
     } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: "auto" });
     }
   }, [pathname]);
 
@@ -122,6 +123,7 @@ function Page() {
         <div id="Destinations">
           <Destinations />
         </div>
+        <SmoothScroll />
       </div>
     </>
   );
