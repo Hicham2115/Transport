@@ -30,9 +30,47 @@ import {
 import { format } from "date-fns";
 import { ChevronDownIcon } from "lucide-react";
 import Aurora from "@/components/ui/Aurora";
+import { z } from "zod";
+import { toast } from "sonner";
+import { sendContactEmail } from "./actions";
+
+const formSchema = z.object({
+  fullName: z.string().min(1, "Le nom est requis"),
+  email: z.string().email("L'email est invalide"),
+  phone: z.string().min(1, "Le téléphone est requis"),
+  company: z.string().min(1, "L'entreprise est requise"),
+  people: z.coerce.number().min(1, "Nombre de personnes invalide"),
+  date: z.any().refine((val) => !!val, "La date est requise"),
+  time: z.string().min(1, "L'heure est requise"),
+  departureCity: z.string().min(1, "La ville de départ est requise"),
+  arrivalCity: z.string().min(1, "La ville d'arrivée est requise"),
+  hasReturn: z.string().min(1, "Veuillez choisir une option de retour"),
+  returnDate: z.any().optional(),
+  returnTime: z.string().optional(),
+  // notes: z.string().min(1, "Les indications sont requises"),
+});
+// .superRefine((data, ctx) => {
+//   if (data.hasReturn === "Oui") {
+//     if (!data.returnDate) {
+//       ctx.addIssue({
+//         code: z.ZodIssueCode.custom,
+//         path: ["returnDate"],
+//         message: "La date de retour est requise",
+//       });
+//     }
+//     if (!data.returnTime) {
+//       ctx.addIssue({
+//         code: z.ZodIssueCode.custom,
+//         path: ["returnTime"],
+//         message: "L'heure de retour est requise",
+//       });
+//     }
+//   }
+// });
 
 function Contact() {
   const [date, setDate] = React.useState();
+  const [returnDate, setReturnDate] = React.useState();
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -52,37 +90,89 @@ function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const result = formSchema.safeParse({ ...formData, date, returnDate });
+    if (result.success) {
+      setErrors({});
+      return true;
+    } else {
+      const newErrors = {};
+      result.error.issues.forEach((issue) => {
+        const key = issue.path[0];
+        if (!newErrors[key]) newErrors[key] = issue.message;
+      });
+      setErrors(newErrors);
+      toast.error(
+        "Veuillez remplir tous les champs obligatoires correctement.",
+        {
+          position: "bottom-right",
+        },
+      );
+      return false;
+    }
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    if (errors[name]) {
+      setErrors((prev) => ({ ...prev, [name]: undefined }));
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validateForm()) return;
+
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({
-          fullName: "",
-          email: "",
-          phone: "",
-          company: "",
-          people: "",
-          date: "",
-          time: "",
-          departureCity: "",
-          arrivalCity: "",
-          hasReturn: "",
-          returnDate: "",
-          returnTime: "",
-          notes: "",
+
+    try {
+      const payload = {
+        ...formData,
+        dateFormatted: date ? format(date, "PPP") : undefined,
+        returnDateFormatted: returnDate ? format(returnDate, "PPP") : undefined,
+      };
+
+      const result = await sendContactEmail(payload);
+
+      if (result.success) {
+        setIsSubmitted(true);
+        toast.success("Demande envoyée avec succès !", {
+          position: "bottom-right",
         });
-      }, 3000);
-    }, 1500);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setDate(null);
+          setReturnDate(null);
+          setFormData({
+            fullName: "",
+            email: "",
+            phone: "",
+            company: "",
+            people: "",
+            date: "",
+            time: "",
+            departureCity: "",
+            arrivalCity: "",
+            hasReturn: "",
+            returnDate: "",
+            returnTime: "",
+            notes: "",
+          });
+        }, 3000);
+      } else {
+        throw new Error(result.error);
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Erreur lors de l'envoi. Veuillez réessayer plus tard.", {
+        position: "bottom-right",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const hours = Array.from(
@@ -92,10 +182,21 @@ function Contact() {
 
   const inputClass =
     "w-full px-4 py-3 rounded-xl border-2 border-[#5028ff]/20 bg-black/40 text-white placeholder-white/30 focus:border-[#b464ff] focus:outline-none focus:bg-black/60 transition-all duration-300 font-medium backdrop-blur-sm";
+  const errorInputClass =
+    " !border-red-500/50 focus:!border-red-500 bg-red-950/10";
   const labelClass =
     "block text-sm font-bold text-[#b464ff] mb-2 tracking-wide";
+  const Label = ({ children }) => (
+    <label className={labelClass}>
+      {children} <span className="text-red-500">*</span>
+    </label>
+  );
   const selectClass =
     "w-full px-4 py-3 rounded-xl border-2 border-[#5028ff]/20 bg-black/60 text-white focus:border-[#b464ff] focus:outline-none transition-all duration-300 font-medium backdrop-blur-sm appearance-none cursor-pointer";
+  const ErrorText = ({ error }) =>
+    error ? (
+      <p className="text-red-400 text-xs mt-1 font-medium">{error}</p>
+    ) : null;
 
   return (
     <div className="relative w-full min-h-screen" id="Contact">
@@ -163,53 +264,52 @@ function Contact() {
                   </p>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label className={labelClass}>Votre nom et prénom</label>
+                      <Label>Votre nom et prénom</Label>
                       <input
                         type="text"
                         name="fullName"
                         value={formData.fullName}
                         onChange={handleInputChange}
-                        required
                         placeholder="Jean Dupont"
-                        className={inputClass}
+                        className={`${inputClass} ${errors.fullName ? errorInputClass : ""}`}
                       />
+                      <ErrorText error={errors.fullName} />
                     </div>
                     <div>
-                      <label className={labelClass}>Votre e-mail</label>
+                      <Label>Votre e-mail</Label>
                       <input
                         type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        required
                         placeholder="jean@exemple.com"
-                        className={inputClass}
+                        className={`${inputClass} ${errors.email ? errorInputClass : ""}`}
                       />
+                      <ErrorText error={errors.email} />
                     </div>
                     <div>
-                      <label className={labelClass}>
-                        Votre numéro de téléphone
-                      </label>
+                      <Label>Votre numéro de téléphone</Label>
                       <input
                         type="tel"
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        required
                         placeholder="+33 6 00 00 00 00"
-                        className={inputClass}
+                        className={`${inputClass} ${errors.phone ? errorInputClass : ""}`}
                       />
+                      <ErrorText error={errors.phone} />
                     </div>
                     <div>
-                      <label className={labelClass}>Votre entreprise</label>
+                      <Label>Votre entreprise</Label>
                       <input
                         type="text"
                         name="company"
                         value={formData.company}
                         onChange={handleInputChange}
                         placeholder="Nom de votre entreprise"
-                        className={inputClass}
+                        className={`${inputClass} ${errors.company ? errorInputClass : ""}`}
                       />
+                      <ErrorText error={errors.company} />
                     </div>
                   </div>
                 </div>
@@ -223,20 +323,20 @@ function Contact() {
                   </p>
                   <div className="grid sm:grid-cols-3 gap-4 mb-4">
                     <div>
-                      <label className={labelClass}>Nombre de personnes</label>
+                      <Label>Nombre de personnes</Label>
                       <input
                         type="number"
                         name="people"
                         value={formData.people}
                         onChange={handleInputChange}
                         min="1"
-                        required
                         placeholder="1"
-                        className={inputClass}
+                        className={`${inputClass} ${errors.people ? errorInputClass : ""}`}
                       />
+                      <ErrorText error={errors.people} />
                     </div>
-                    <div className="">
-                      <label className={labelClass}>Date</label>
+                    <div>
+                      <Label>Date</Label>
                       <Popover>
                         <PopoverTrigger asChild>
                           <Button
@@ -244,7 +344,7 @@ function Contact() {
                             data-empty={!date}
                             className={
                               inputClass +
-                              " w-[212px] justify-between py-5.5 text-left font-normal data-[empty=true]:text-muted-foreground"
+                              " w-full justify-between h-12.5 text-left font-normal data-[empty=true]:text-muted-foreground"
                             }
                           >
                             {date ? (
@@ -269,14 +369,13 @@ function Contact() {
                       </Popover>
                     </div>
                     <div>
-                      <label className={labelClass}>Heure</label>
+                      <Label>Heure</Label>
                       <div className="relative">
                         <select
                           name="time"
                           value={formData.time}
                           onChange={handleInputChange}
-                          required
-                          className={selectClass}
+                          className={`${selectClass} ${errors.time ? errorInputClass : ""}`}
                         >
                           <option value="">— Choisir —</option>
                           {hours.map((h) => (
@@ -287,32 +386,33 @@ function Contact() {
                         </select>
                         <Clock className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#b464ff] pointer-events-none" />
                       </div>
+                      <ErrorText error={errors.time} />
                     </div>
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label className={labelClass}>Ville de départ</label>
+                      <Label>Ville de départ</Label>
                       <input
                         type="text"
                         name="departureCity"
                         value={formData.departureCity}
                         onChange={handleInputChange}
-                        required
                         placeholder="Paris"
-                        className={inputClass}
+                        className={`${inputClass} ${errors.departureCity ? errorInputClass : ""}`}
                       />
+                      <ErrorText error={errors.departureCity} />
                     </div>
                     <div>
-                      <label className={labelClass}>Ville d'arrivée</label>
+                      <Label>Ville d'arrivée</Label>
                       <input
                         type="text"
                         name="arrivalCity"
                         value={formData.arrivalCity}
                         onChange={handleInputChange}
-                        required
                         placeholder="Lyon"
-                        className={inputClass}
+                        className={`${inputClass} ${errors.arrivalCity ? errorInputClass : ""}`}
                       />
+                      <ErrorText error={errors.arrivalCity} />
                     </div>
                   </div>
                 </div>
@@ -325,10 +425,10 @@ function Contact() {
                     <span className="w-6 h-px bg-white" /> Trajet retour
                   </p>
                   <div className="mb-4">
-                    <label className={labelClass}>
-                      Avez-vous une date de retour prévue ?
-                    </label>
-                    <div className="flex gap-3">
+                    <Label>Avez-vous une date de retour prévue ?</Label>
+                    <div
+                      className={`flex gap-3 p-1 rounded-xl ${errors.hasReturn ? "border-2 border-red-500/50 bg-red-950/10" : ""}`}
+                    >
                       {["Oui", "Non"].map((opt) => (
                         <label
                           key={opt}
@@ -350,28 +450,64 @@ function Contact() {
                         </label>
                       ))}
                     </div>
+                    <ErrorText error={errors.hasReturn} />
                   </div>
 
                   {formData.hasReturn === "Oui" && (
                     <div className="grid sm:grid-cols-2 gap-4 animate-fade-in-up">
                       <div>
-                        <label className={labelClass}>Date de retour</label>
-                        <input
-                          type="date"
-                          name="returnDate"
-                          value={formData.returnDate}
-                          onChange={handleInputChange}
-                          className={inputClass + " [color-scheme:dark]"}
-                        />
+                        <span className="block text-sm font-bold text-[#b464ff] mb-2 tracking-wide">
+                          Date de retour
+                        </span>
+                        <Popover>
+                          <PopoverTrigger asChild>
+                            <Button
+                              variant="outline"
+                              data-empty={!returnDate}
+                              className={`${inputClass} w-full justify-between h-12.5 text-left font-normal data-[empty=true]:text-muted-foreground ${
+                                errors.returnDate ? errorInputClass : ""
+                              }`}
+                            >
+                              {returnDate ? (
+                                format(returnDate, "PPP")
+                              ) : (
+                                <span>Pick a date</span>
+                              )}
+                              <ChevronDownIcon />
+                            </Button>
+                          </PopoverTrigger>
+                          <PopoverContent
+                            className={inputClass + " [color-scheme:dark] "}
+                            align="start"
+                          >
+                            <Calendar
+                              mode="single"
+                              selected={returnDate}
+                              onSelect={(d) => {
+                                setReturnDate(d);
+                                if (errors.returnDate)
+                                  setErrors((prev) => ({
+                                    ...prev,
+                                    returnDate: undefined,
+                                  }));
+                              }}
+                              defaultMonth={returnDate}
+                            />
+                          </PopoverContent>
+                        </Popover>
+                        <ErrorText error={errors.returnDate} />
                       </div>
                       <div>
-                        <label className={labelClass}>Heure de retour</label>
+                        <span className="block text-sm font-bold text-[#b464ff] mb-2 tracking-wide">
+                          Date de retour
+                        </span>
+
                         <div className="relative">
                           <select
                             name="returnTime"
                             value={formData.returnTime}
                             onChange={handleInputChange}
-                            className={selectClass}
+                            className={`${selectClass} ${errors.returnTime ? errorInputClass : ""}`}
                           >
                             <option value="">— Choisir —</option>
                             {hours.map((h) => (
@@ -382,6 +518,7 @@ function Contact() {
                           </select>
                           <Clock className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#b464ff] pointer-events-none" />
                         </div>
+                        <ErrorText error={errors.returnTime} />
                       </div>
                     </div>
                   )}

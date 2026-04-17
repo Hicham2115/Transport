@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/MainSection/Footer";
 import Navbar from "@/components/MainSection/NavBar";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     type: "website",
   },
-twitter: {
+  twitter: {
     card: "summary_large_image",
     title: "Next Way Transport",
     description:
@@ -81,6 +82,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
