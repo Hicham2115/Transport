@@ -235,10 +235,10 @@ function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 items-start">
+        <div className=" gap-10">
           {/* Form */}
           <div
-            className="animate-fade-in-up lg:col-span-1"
+            className="lg:col-span-2 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
             <div className="rounded-2xl p-8 w-full sm:p-10 border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md">
