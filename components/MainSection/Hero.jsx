@@ -7,10 +7,10 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div className="text-center py-20 px-4 md:px-8 lg:px-16 space-y-7 mt-10">
+    <div className="text-center py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-16 space-y-6 mt-8 max-w-5xl mx-auto">
       {/* EYEBROW */}
       <div className="animate-fade-in-up animate-fade-in-up-delay-1 mb-4">
-        <span className="px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-semibold tracking-widest text-white/80 uppercase">
+        <span className="px-3 py-1 rounded-full sm:px-4 sm:py-1.5 bg-white/10 border border-white/20 text-[10px] sm:text-xs font-semibold sm:tracking-widest tracking-wide text-white/80 uppercase">
           Paris · France · Europe — Location B2B d'Autocars & Minibus
         </span>
       </div>
@@ -24,17 +24,14 @@ function Hero() {
         cursorCharacter="_"
         deletingSpeed={50}
         cursorBlinkDuration={0.5}
-        className="text-4xl md:text-6xl lg:text-6xl font-bold tracking-tight animate-fade-in-up text-white"
+        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight animate-fade-in-up text-white leading-tight max-w-3xl mx-auto"
         loop={false}
       />
 
       {/* SOUS-TITRE */}
       <p
-        style={{
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
-          fontSize: "1.1rem",
-        }}
-        className="text-md md:text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up animate-fade-in-up-delay-2"
+        style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
+        className="text-sm sm:text-base md:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animate-fade-in-up-delay-2 px-2"
       >
         Next Way Transport organise le transport de groupes pour les
         entreprises, les agences et les organisateurs d’événements. Une seule
@@ -43,7 +40,7 @@ function Hero() {
 
       {/* APPEL À L’ACTION PRINCIPAL + LIEN SECONDAIRE */}
       <div className="flex flex-col sm:flex-row justify-center gap-4 items-center animate-fade-in-up animate-fade-in-up-delay-3 mb-2">
-        <div className="flex flex-col sm:flex-row gap-4 sm:px-4">
+        <div className="flex flex-col sm:flex-row gap-3 sm:px-4 w-full sm:w-auto">
           <Link
             href="/#DemanderUnDevis"
             className="w-full sm:w-auto px-5 py-3 sm:px-3 sm:py-2 text-sm sm:text-base rounded-sm text-white font-semibold cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap shadow-lg hover:bg-white/20 transition-all duration-300"
