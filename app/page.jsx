@@ -123,7 +123,7 @@ function Page() {
         <div id="Destinations">
           <Destinations />
         </div>
-        <SmoothScroll />
+        {/* <SmoothScroll /> */}
       </div>
     </>
   );

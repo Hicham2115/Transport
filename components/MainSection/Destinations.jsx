@@ -13,10 +13,10 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-import img1 from "@/app/assets/ansgar-scheffold-mtfTz0FnwBw-unsplash.jpg";
-import img2 from "@/app/assets/chris-karidis-nnzkZNYWHaU-unsplash.jpg";
-import img3 from "@/app/assets/florian-wehde-WBGjg0DsO_g-unsplash.jpg";
-import img4 from "@/app/assets/jorge-fernandez-salas-ntuDzybCpH0-unsplash.jpg";
+import img1 from "@/app/assets/Bus_driving_through_202604191309.jpeg";
+import img2 from "@/app/assets/Nextway_Transport_bus_202604191310.jpeg";
+import img3 from "@/app/assets/Nextway_Transport_bus_202604191314.jpeg";
+import img4 from "@/app/assets/Luxury_bus_driving_202604191306.jpeg";
 
 function Destinations() {
   const cards = [
@@ -60,12 +60,12 @@ function Destinations() {
               className="w-full rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl transition-transform duration-300 hover:-translate-y-2"
             >
               {/* Image */}
-              <div className="relative w-full h-40 sm:h-48 md:h-52">
+              <div className="relative w-full h-40 sm:h-48 md:h-120">
                 <Image
                   src={card.icon}
                   alt="Bus de luxe"
                   fill
-                  className="object-cover"
+                  className="object-cover "
                 />
               </div>
 

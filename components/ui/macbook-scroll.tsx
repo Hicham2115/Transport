@@ -5,7 +5,7 @@ import img1 from "@/app/assets/bournes-senruob-7npXwp8D_Kk-unsplash.jpg";
 import img2 from "@/app/assets/manh-lai-van-xCe01R-lBio-unsplash.png";
 import img3 from "@/app/assets/paul.jpg";
 import img4 from "@/app/assets/paul2.jpg";
-import img5 from "@/app/assets/thierry-biland-W0jw6ROdykI-unsplash.jpg";
+import img5 from "@/app/assets/Nextway_Transport_bus_202604191318.jpeg";
 import Image from "next/image";
 
 export default function MacbookScrollCards() {
@@ -67,7 +67,7 @@ export default function MacbookScrollCards() {
       </motion.div>
       <div className="w-full transition-transform duration-300 hover:-translate-y-2 sm:w-[45%] lg:w-[40%] mt-10 rounded-2xl overflow-hidden border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md shadow-xl">
         {/* Image */}
-        <div className="relative h-48 w-full">
+        <div className="relative h-78 w-full">
           <Image
             src={img5.src}
             alt={"Bus de luxe"}

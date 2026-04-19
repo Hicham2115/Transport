@@ -114,8 +114,17 @@ function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-xs text-white/30">
-            &copy; {currentYear} NEXT WAY TRANSPORT. Tous droits réservés.
+          <p className="text-white text-sm text-center md:text-left">
+            &copy; {currentYear} – Designed & developed by{" "}
+            <a
+              className="underline"
+              href="https://www.stallionadvertising.ma/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Stallion Advertising
+            </a>
+            .
           </p>
 
           {/* <div className="flex gap-5">

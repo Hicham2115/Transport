@@ -5,8 +5,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import img1 from "@/app/assets/Gemini_Generated_Image_yflkgyflkgyflkgy.png";
-import img2 from "@/app/assets/jeswin-thomas-iIGovKRty8g-unsplash.jpg";
+import img1 from "@/app/assets/jeswin-thomas-iIGovKRty8g-unsplash.jpg";
+import img2 from "@/app/assets/Nextway_Transport_bus_202604191319.jpeg";
 import img3 from "@/app/assets/3 (1).png";
 import stars from "@/app/assets/rating.png";
 
