@@ -83,7 +83,7 @@ export default function Component() {
                       <button className="relative inline-flex h-8 active:scale-95 transition overflow-hidden rounded-md p-[1px] focus:outline-none whitespace-nowrap">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
 
-                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-3 text-xs font-medium text-black backdrop-blur-3xl gap-1">
+                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center text-white rounded-md bg-slate-950 px-3 text-xs font-medium  backdrop-blur-3xl gap-1">
                           Contactez-nous
                           <svg
                             stroke="currentColor"
@@ -123,7 +123,7 @@ export default function Component() {
                     active={link.active}
                     className={`py-1.5 px-3 font-medium transition-all hover:underline rounded-md hover:bg-transparent cursor-pointer ${
                       link.active
-                        ? "text-black bg-[#5226ff] shadow-[0_0_20px_rgba(186,252,12,0.6)]"
+                        ? " bg-[#5226ff] shadow-[0_0_20px_rgba(186,252,12,0.6)]"
                         : "hover:text-[#5226ff]"
                     }`}
                     href={link.href}
