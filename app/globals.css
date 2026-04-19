@@ -129,7 +129,7 @@
 }
 
 html {
-  /* scroll-behavior: smooth; (disabled for lenis compatibility) */
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -184,4 +184,33 @@ html.lenis body {
 }
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
+}
+
+/* Shared page entrance animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out both;
+}
+
+.animate-fade-in-up-delay-1 {
+  animation-delay: 0.05s;
+}
+.animate-fade-in-up-delay-2 {
+  animation-delay: 0.15s;
+}
+.animate-fade-in-up-delay-3 {
+  animation-delay: 0.28s;
+}
+.animate-fade-in-up-delay-4 {
+  animation-delay: 0.42s;
 }

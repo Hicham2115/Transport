@@ -9,7 +9,7 @@ function Hero() {
   return (
     <div className="text-center py-20 px-4 md:px-8 lg:px-16 space-y-7 mt-10">
       {/* EYEBROW */}
-      <div className="animate-fade-in-up mb-4">
+      <div className="animate-fade-in-up animate-fade-in-up-delay-1 mb-4">
         <span className="px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-semibold tracking-widest text-white/80 uppercase">
           Paris · France · Europe — Location B2B d'Autocars & Minibus
         </span>
@@ -34,7 +34,7 @@ function Hero() {
           fontFamily: "'Cormorant Garamond', Georgia, serif",
           fontSize: "1.1rem",
         }}
-        className="text-md md:text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up"
+        className="text-md md:text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up animate-fade-in-up-delay-2"
       >
         Next Way Transport organise le transport de groupes pour les
         entreprises, les agences et les organisateurs d’événements. Une seule
@@ -42,7 +42,7 @@ function Hero() {
       </p>
 
       {/* APPEL À L’ACTION PRINCIPAL + LIEN SECONDAIRE */}
-      <div className="flex flex-col sm:flex-row justify-center gap-4 items-center animate-fade-in-up mb-2">
+      <div className="flex flex-col sm:flex-row justify-center gap-4 items-center animate-fade-in-up animate-fade-in-up-delay-3 mb-2">
         <div className="flex flex-col sm:flex-row gap-4 sm:px-4">
           <Link
             href="/#DemanderUnDevis"
@@ -60,7 +60,7 @@ function Hero() {
       </div>
 
       {/* MENTION SOUS-BOUTON */}
-      <p className="text-xs text-white/50 animate-fade-in-up mt-4">
+      <p className="text-xs text-white/50 animate-fade-in-up animate-fade-in-up-delay-4 mt-4">
         Sans engagement. Pas de spam. Juste un devis rapide et précis.
       </p>
     </div>
