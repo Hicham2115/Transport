@@ -244,14 +244,14 @@ function Contact() {
             <div className="rounded-2xl p-8 w-full sm:p-10 border border-white/10 bg-[#1a1a2e]/80 backdrop-blur-md">
               <div className="flex items-center gap-3 mb-10">
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center"
+                  className="w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center"
                   style={{
                     background: "linear-gradient(135deg, #5028ff, #b464ff)",
                   }}
                 >
-                  <MessageSquare className="w-6 h-6 text-white" />
+                  <MessageSquare className="w-5 md:w-6 text-white" />
                 </div>
-                <h2 className="text-xl sm:text-3xl font-black text-white">
+                <h2 className="text-lg md:text-3xl font-black text-white">
                   Informations de réservation
                 </h2>
               </div>
