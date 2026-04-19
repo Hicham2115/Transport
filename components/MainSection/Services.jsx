@@ -13,35 +13,34 @@ function Services() {
         {/* Left: Text Block */}
         <div className="flex flex-col justify-center gap-6">
           <h2
-            className="text-4xl md:text-6xl font-serif leading-tight "
+            className="text-4xl md:text-5xl font-serif leading-tight "
             style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
-            VOTRE CONFORT
+            UN COORDINATEUR
             <br />
             <em className="italic text-xl md:text-5xl whitespace-nowrap">
-              ET VOTRE SATISFACTION
+              DE TRANSPORT SPÉCIALISÉ
             </em>
           </h2>
           <div className="w-12 h-[2px] bg-[#5028ff]" />
           <h1 className="text-2xl md:text-4xl font-serif leading-tight ">
-            Présentation
+            Notre approche
           </h1>
           <p
-            className=" leading-relaxed max-w-lg text-sm md:text-lg"
+            className=" leading-relaxed max-w-lg text-sm md:text-base"
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              // fontSize: "1.1rem",
             }}
           >
-            Fort de son expérience dans le transport, Next Way Transport met
-            tout en œuvre pour obtenir la confiance de ses clients. <br /> Nos
-            conseillers sont formés pour vous aider à planifier votre trajet et
-            à trouver la bonne offre pour réaliser au mieux votre projet.
-            Découvrez nos services de location de bus pour séminaire
-            d’entreprise, de location de bus pour mariage, de location de bus
-            pour aller station de ski, de location de bus pour sorties
-            scolaires, location de bus à Paris 1 ou encore location de bus à
-            Paris 2.
+            Next Way Transport a été fondé pour résoudre un problème majeur :
+            organiser le transport de groupes en France est souvent complexe,
+            chronophage et plein d'incertitudes.
+            <br /> <br />
+            Nous avons créé un modèle plus fluide. Nous opérons en tant que
+            coordinateur de transport dédié. Nous ne sommes pas une simple
+            plateforme. Notre équipe de spécialistes recherche, vérifie et gère
+            les autocaristes pour vous, et reste impliquée depuis la première
+            demande jusqu'au dépôt final.
           </p>
         </div>
 
@@ -51,31 +50,31 @@ function Services() {
       </div>
       <div className="relative z-10 max-w-6xl mx-auto grid gap-9 items-center">
         <h1 className="text-2xl md:text-4xl font-serif leading-tight ">
-          Législation
+          Conformité et Sécurité
         </h1>
-        <p className=" leading-relaxed text-base w-max-lg -mt-4">
-          Dans le respect des réglementations françaises et européenne Next Way
-          Transport, location de bus avec chauffeur à Paris, veille à employer
-          des partenaires rigoureux, notamment dans le cadre du temps de
-          conduite continu, du temps de conduite journalier, des temps de pause
-          etc…
+        <p className=" leading-relaxed text-base w-max-lg -mt-4 text-gray-300">
+          Dans le strict respect de la législation française et européenne, Next
+          Way Transport veille à collaborer avec des prestataires en totale
+          règle. Nous garantissons le suivi des normes : limitations du temps de
+          conduite, périodes de repos obligatoires et exigences absolues en
+          matière d'assurances.
         </p>
         <br />
         <div className="flex gap-6 flex-wrap">
           <div>
             <h1 className="text-2xl md:text-3xl font-serif leading-tight ">
-              Qualité de nos partenaires
+              Nos exigences de qualité
             </h1>
-            <p className=" leading-relaxed w-max-lg text-sm italic mt-2 mb-2">
-              Nous collaborons avec des autocaristes professionnels selon des
-              critères stricts.
+            <p className=" leading-relaxed w-max-lg text-sm italic mt-2 mb-2 text-gray-400">
+              Nous sélectionnons nos partenaires selon des critères stricts afin
+              de vous garantir :
             </p>
-            <ul className="list-disc pl-6">
-              <li>L’accueil client</li>
-              <li>Le confort</li>
-              <li>La sécurité</li>
-              <li>La ponctualité</li>
-              <li>Le matériel</li>
+            <ul className="list-disc pl-6 text-gray-300 mt-4 space-y-2">
+              <li>Des véhicules régulièrement inspectés</li>
+              <li>Des chauffeurs professionnels et briefés</li>
+              <li>Une ponctualité exemplaire</li>
+              <li>Le respect absolu de la législation</li>
+              <li>Un confort optimal pour vos passagers</li>
             </ul>
           </div>
 

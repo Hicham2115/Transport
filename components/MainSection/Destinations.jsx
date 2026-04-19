@@ -24,25 +24,25 @@ function Destinations() {
       icon: img1.src,
       title: "ESPAGNE",
       description:
-        "Voyagez vers les plus belles villes d’Espagne comme Barcelone, Madrid et Séville avec confort et sécurité.",
+        "Barcelone, Madrid, Séville et les régions environnantes. Trajets transfrontaliers gérés avec toute la documentation requise.",
     },
     {
       icon: img2.src,
       title: "ALLEMAGNE",
       description:
-        "Découvrez l’Allemagne avec nos services vers Berlin, Munich et Francfort adaptés à tous vos besoins.",
+        "Berlin, Munich, Francfort, Cologne. Notre réseau s'étend au-delà des frontières pour tous vos projets internationaux.",
     },
     {
       icon: img3.src,
       title: "BELGIQUE",
       description:
-        "Profitez de trajets vers Bruxelles, Anvers et Bruges avec un service fiable et professionnel.",
+        "Belgique (Bruxelles, Anvers, Bruges). Nous confirmons la disponibilité et les modalités de votre itinéraire spécifique.",
     },
     {
       icon: img4.src,
       title: "FRANCE",
       description:
-        "Des déplacements vers Paris, Lyon, Marseille et toute la France avec des prix compétitifs.",
+        "Paris et l'Île-de-France, Lyon, Marseille, Bordeaux et toutes les grandes liaisons régionales. Trajets locaux et nationaux.",
     },
   ];
 
@@ -50,7 +50,7 @@ function Destinations() {
     <div className="flex h-full w-full justify-center mt-10" id="AboutUs">
       <div className="p-8 text-center space-y-6 md:space-y-8 pb-20">
         <h1 className="text-3xl md:text-4xl font-black tracking-tight ">
-          Destinations
+          Où Nous Intervenons
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto">
@@ -77,7 +77,7 @@ function Destinations() {
 
                 <p className="text-gray-400 text-sm mt-2">{card.description}</p>
 
-                <Dialog>
+                {/* <Dialog>
                   <DialogTrigger asChild>
                     <div className="flex items-center justify-center gap-1 group text-sm font-semibold hover:text-[#8c64ff] transition-colors duration-300 cursor-pointer mt-4">
                       <span>EN SAVOIR PLUS</span>
@@ -111,7 +111,7 @@ function Destinations() {
                       ))}
                     </div>
                   </DialogContent>
-                </Dialog>
+                </Dialog> */}
               </div>
             </div>
           ))}

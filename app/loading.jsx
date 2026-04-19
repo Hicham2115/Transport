@@ -78,13 +78,13 @@ export default function Loading() {
         <h2
           className="mt-6 text-2xl font-black tracking-tight text-white text-center"
         >
-          Chargement en cours
+          Préparation de votre dossier
         </h2>
         <p
           className="mt-2 text-sm text-center"
           style={{ color: "rgba(255,255,255,0.4)", maxWidth: 240 }}
         >
-          Votre trajet est en préparation...
+          Recherche des meilleures options de transport...
         </p>
 
         {/* Animated progress bar */}

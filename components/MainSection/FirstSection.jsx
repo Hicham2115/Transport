@@ -11,7 +11,7 @@ function FirstSection() {
         {/* Left: Text Block */}
         <div className="flex flex-col justify-center gap-6">
           <SplitText
-            text="Un devis Simple "
+            text="Un Processus "
             className="text-5xl md:text-6xl font-serif leading-tight "
             delay={50}
             duration={1.25}
@@ -25,7 +25,7 @@ function FirstSection() {
             showCallback
           />
           <SplitText
-            text="et Rapide"
+            text="Simple et Clair"
             className="text-3xl md:text-4xl font-serif leading-tight "
             delay={50}
             duration={1.25}
@@ -52,12 +52,7 @@ function FirstSection() {
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.1rem",
             }}
-            text="Parce que nous considérons toutes vos demandes comme importantes,
-  nous nous engageons à vous répondre en moins de 24H. Notre équipe de
-  spécialistes met à votre disposition toute son expertise : Des
-  régulateurs et des coordinateurs. Réserver un bus avec chauffeur est
-  une solution idéale pour faciliter les déplacements de groupes lors
-  d’événements professionnels ou de sorties diverses."
+            text="Nous avons conçu notre processus pour qu'il soit rapide, clair et sans stress pour vous. De la demande initiale jusqu'à l'arrivée à destination, nous gérons l'intégralité de votre transport de groupe. Une fiabilité que toute entreprise exige."
             className="leading-relaxed text-base max-w-lg"
             delay={15}
             duration={0.3}
@@ -88,10 +83,7 @@ function FirstSection() {
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.1rem",
             }}
-            text="Grâce à son réseau composé de partenaires à travers la France,
-            Next Way Transport France est spécialisé dans la location de bus et minibus
-            avec chauffeur que ce soit pour des séminaires d’entreprises, des
-            agences évènementielles, établissements scolaires et autres…"
+            text="Notre équipe examine votre demande et sélectionne les meilleurs opérateurs de notre réseau de partenaires vérifiés. Vous recevez un devis détaillé sous 24 heures. Aucune attente, aucune estimation floue, uniquement des prix clairs."
             className="leading-relaxed text-base max-w-lg"
             delay={15}
             duration={0.3}
@@ -120,7 +112,7 @@ function FirstSection() {
             <Link href="/#DemanderUnDevis">
               {" "}
               <Button className="group relative overflow-hidden rounded-none px-10 py-5 text-xs tracking-[0.25em] uppercase font-semibold text-white bg-gradient-to-r from-[#5226ff] to-[#e060cb] transition-colors duration-500 cursor-pointer">
-                Demander Un Devis
+                Démarrer votre demande
               </Button>
             </Link>
           </div>

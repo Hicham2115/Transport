@@ -6,22 +6,22 @@ import Image from "next/image";
 function ThirdSection() {
   const features = [
     {
-      title: "Une solution économique",
+      title: "Entreprises & Séminaires",
       icon: économique,
       description:
-        "La location d'un bus avec chauffeur est une solution économique, flexible et idéale pour les déplacements en groupe.",
+        "Des trajets ponctuels, professionnels, exigeant un minimum de gestion. Nous gérons la coordination, vos équipes n'ont plus qu'à monter à bord.",
     },
     {
-      title: "Économisez votre temps !",
+      title: "Agences Événementielles",
       icon: temps,
       description:
-        "Next Way Transport simplifie l'organisation en prenant en charge toute la logistique pour vos déplacements.",
+        "Vos événements exigent une gestion millimétrée. Nous déployons plusieurs véhicules et restons hyper-disponibles le jour J.",
     },
     {
-      title: "On s'adapte à vos besoins",
+      title: "Écoles & Instituts",
       icon: besoins,
       description:
-        "Une large flotte de véhicules adaptés à tous types de déplacements avec équipements modernes.",
+        "Conformité réglementaire, précision et sécurité maximale. Un service structuré sans aucun compromis sur la sérénité.",
     },
   ];
 
@@ -46,7 +46,7 @@ function ThirdSection() {
       <section className="w-full flex justify-center mt-20 px-4" id="AboutUs">
         <div className="max-w-5xl w-full text-center space-y-10">
           <h1 className="text-2xl md:text-4xl font-black text-white">
-            Pourquoi louer un bus avec chauffeur ?
+            Les Structures Qui Nous Font Confiance
           </h1>
 
           <div className="grid md:grid-cols-3 gap-6">

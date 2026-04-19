@@ -12,7 +12,6 @@ import Services from "@/components/MainSection/Services";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
-import SmoothScroll from "@/components/SmoothScroll";
 
 function Page() {
   const pathname = usePathname();
@@ -123,7 +122,6 @@ function Page() {
         <div id="Destinations">
           <Destinations />
         </div>
-        {/* <SmoothScroll /> */}
       </div>
     </>
   );

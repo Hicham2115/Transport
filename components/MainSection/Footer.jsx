@@ -51,8 +51,7 @@ function Footer() {
                 NEXT WAY <span className="text-[#8164f3]">TRANSPORT</span>
               </span>
               <p className="mt-3 text-sm text-white/50 leading-relaxed max-w-xs">
-                Voyagez en toute sérénité. Transport premium, destinations
-                inoubliables.
+                Un coordinateur de transport spécialiste pour les entreprises et les agences, partout en France et en Europe.
               </p>
             </div>
 

@@ -11,23 +11,23 @@ function SecondSection() {
     {
       icon: busIcon.src,
       iconBg: "bg-gradient-to-br from-[#8c64ff] to-[#5226ff]",
-      title: "TRANSPORT",
+      title: "RÉPONSE SOUS 24H",
       description:
-        "Spécialiste de la location de bus et minibus avec chauffeur depuis de nombreuses années, Next Way Transport vous garantit un service irréprochable.",
+        "Soumettez votre demande et recevez un devis détaillé et précis dans les 24 heures. Des tarifs clairs pour vous permettre de planifier en toute confiance.",
     },
     {
       icon: clientIcon.src,
       iconBg: "bg-gradient-to-br from-[#8c64ff] to-[#5226ff]",
-      title: "SERVICE CLIENT",
+      title: "COORDINATEUR DÉDIÉ",
       description:
-        "Notre service client est à votre écoute 7j/7 pour répondre à vos demandes de location de car.",
+        "Chaque réservation est gérée par un interlocuteur unique qui connaît votre itinéraire, votre groupe et vos contraintes. Aucune confusion, suivi garanti.",
     },
     {
       icon: priceIcon.src,
       iconBg: "bg-gradient-to-br from-[#8c64ff] to-[#5226ff]",
-      title: "PRIX ATTRACTIFS",
+      title: "PARTENAIRES VÉRIFIÉS",
       description:
-        "De nombreux partenaires à travers la France Next Way Transport vous propose les meilleurs prix selon votre trajet.",
+        "Nous collaborons exclusivement avec des opérateurs agréés et assurés, rigoureusement sélectionnés pour leur fiabilité et leur professionnalisme.",
     },
   ];
 
@@ -36,7 +36,7 @@ function SecondSection() {
       <div className="flex h-full w-full justify-center mt-10" id="AboutUs">
         <div className="p-8 text-center space-y-6 md:space-y-8 pb-20">
           <h1 className="text-2xl md:text-2xl font-black tracking-tight bg-gradient-to-r from-[#5226ff] via-[#a855f7] to-[#e060cb] bg-clip-text text-transparent">
-            Pourquoi choisir
+            Pourquoi les entreprises font confiance à
           </h1>
 
           <h1 className="text-xl md:text-3xl font-black tracking-tight -mt-4 text-white">
@@ -47,10 +47,7 @@ function SecondSection() {
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.1rem",
             }}
-            text="Next Way Transport est votre partenaire de confiance pour la location de bus
-          et minibus avec chauffeur. Nous proposons des solutions de transport
-          fiables, adaptées à tous types de déplacements, avec un service
-          rapide, des prix compétitifs et un accompagnement personnalisé."
+            text="Nous ne nous contentons pas d'envoyer un bus. Nous prenons en charge l'intégralité du trajet — de la coordination jusqu'à la confirmation — afin que votre transport se déroule sans aucune surprise."
             className="text-sm md:text-lg max-w-3xl mx-auto text-gray-300 -mt-4 px-4"
             delay={15}
             duration={0.3}
