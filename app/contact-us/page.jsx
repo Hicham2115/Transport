@@ -251,7 +251,7 @@ function Contact() {
                 >
                   <MessageSquare className="w-6 h-6 text-white" />
                 </div>
-                <h2 className="text-2xl sm:text-xl font-black text-white">
+                <h2 className="text-xl sm:text-3xl font-black text-white">
                   Informations de réservation
                 </h2>
               </div>
