@@ -22,6 +22,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
+import DemanderDevis from "@/components/MainSection/DemanderDevis";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 48 },
@@ -162,65 +163,75 @@ function Page() {
           <Hero />
         </div>
 
-        <Reveal>
-          <TrustStrip />
-        </Reveal>
+        <div className="relative ">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(82,38,255,0.18),transparent_65%)] pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_20%,rgba(224,96,203,0.08),transparent_50%)] pointer-events-none" />
+          <div className="bg-[00000020]">
+            <Reveal>
+              <TrustStrip />
+            </Reveal>
 
-        <Reveal>
-          <ServiceIntentSelector />
-        </Reveal>
+            <Reveal>
+              <ServiceIntentSelector />
+            </Reveal>
 
-        <Reveal>
-          <HomeQuoteForm />
-        </Reveal>
+            <Reveal>
+              <SpeedCommitment />
+            </Reveal>
 
-        <Reveal>
-          <SpeedCommitment />
-        </Reveal>
+            <Reveal>
+              <HomeQuoteForm />
+            </Reveal>
 
-        <Reveal>
-          <GeographicCoverage />
-        </Reveal>
-        <Reveal variants={fadeLeft}>
-          <FirstSection />
-        </Reveal>
-        <Reveal>
-          <PremiumServices />
-        </Reveal>
+            <Reveal variants={fadeLeft}>
+              <FirstSection />
+            </Reveal>
+            <Reveal>
+              <GeographicCoverage />
+            </Reveal>
 
-        {/* <SecondSection /> */}
-        {/* <ThirdSection /> */}
-        <div id="Services">{/* <Services /> */}</div>
-        <Reveal variants={zoomIn}>
-          <div id="Autocars">
-            <MacbookScroll />
+            <Reveal>
+              <PremiumServices />
+            </Reveal>
+
+            {/* <SecondSection /> */}
+            {/* <ThirdSection /> */}
+            <div id="Services">{/* <Services /> */}</div>
+            <Reveal variants={zoomIn}>
+              <DemanderDevis />
+            </Reveal>
+            <Reveal variants={zoomIn}>
+              <div id="Autocars">
+                <MacbookScroll />
+              </div>
+            </Reveal>
+            <Reveal>
+              <div id="Destinations">
+                <Destinations />
+              </div>
+            </Reveal>
+
+            {/* [10] Urgence */}
+            {/* <UrgencyBlock /> */}
+
+            <Reveal>
+              <div id="FAQ">
+                <FaQ />
+              </div>
+            </Reveal>
+
+            {/* [12] Réassurance Légale */}
+            {/* <LegalReassurance /> */}
+
+            <Reveal variants={zoomIn}>
+              <SocialProof />
+            </Reveal>
+
+            <Reveal>
+              <FinalCTA />
+            </Reveal>
           </div>
-        </Reveal>
-        <Reveal>
-          <div id="Destinations">
-            <Destinations />
-          </div>
-        </Reveal>
-
-        {/* [10] Urgence */}
-        {/* <UrgencyBlock /> */}
-
-        <Reveal>
-          <div id="FAQ">
-            <FaQ />
-          </div>
-        </Reveal>
-
-        {/* [12] Réassurance Légale */}
-        {/* <LegalReassurance /> */}
-
-        <Reveal variants={zoomIn}>
-          <SocialProof />
-        </Reveal>
-
-        <Reveal>
-          <FinalCTA />
-        </Reveal>
+        </div>
       </div>
     </>
   );

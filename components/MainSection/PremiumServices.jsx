@@ -82,7 +82,7 @@ function PremiumServices() {
             textAlign="center"
           />
           <p
-            className="mt-5 text-gray-400 max-w-2xl mx-auto leading-relaxed"
+            className="mt-5 text-gray-300 max-w-2xl mx-auto leading-relaxed"
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.1rem",

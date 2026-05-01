@@ -37,7 +37,7 @@ const steps = [
 
 function SpeedCommitment() {
   return (
-    <section className="relative py-20 px-6 md:px-16 overflow-hidden text-white bg-[#060010]">
+    <section className="relative py-20 px-6 md:px-16 overflow-hidden text-white ">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">

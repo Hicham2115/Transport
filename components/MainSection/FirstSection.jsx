@@ -6,7 +6,7 @@ import SplitText from "@/components/ui/SplitText";
 
 function FirstSection() {
   return (
-    <section className="relative py-20 px-6 md:px-16 mt-20 overflow-hidden text-white!">
+    <section className="relative py-20 px-6 md:px-16 mt-20 overflow-hidden text-white! ">
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left: Text Block */}
         <div className="flex flex-col justify-center gap-6">
@@ -129,15 +129,6 @@ function FirstSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#2C1F0E]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
         </div>
-      </div>
-
-      {/* Bottom decorative line */}
-      <div className="max-w-6xl mx-auto mt-16 flex items-center gap-4">
-        <div className="flex-1 h-[1px] bg-white/10" />
-        <span className="text-[10px] tracking-[0.4em] uppercase text-white/40">
-          PARIS & ÎLE-DE-FRANCE
-        </span>
-        <div className="flex-1 h-[1px] bg-white/10" />
       </div>
     </section>
   );

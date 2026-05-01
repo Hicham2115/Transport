@@ -62,33 +62,33 @@ function Hero() {
       {/* MENTION SOUS-BOUTON */}
       <div className="text-xs flex gap-4 justify-center items-center text-white/80 animate-fade-in-up animate-fade-in-up-delay-4 mt-4">
         <div>
-          <Image
-            src={checkIcon}
-            alt="Check"
-            className="inline-block mr-2"
-            width="15"
-            height="15"
-          />
+          {/* <Image
+              src={checkIcon}
+              alt="Check"
+              className="inline-block mr-2"
+              width="15"
+              height="15"
+            /> */}
           Réponse sous 2h garantie
         </div>
         <div>
-          <Image
-            src={checkIcon}
-            alt="Check"
-            className="inline-block mr-2"
-            width="15"
-            height="15"
-          />
+          {/* <Image
+              src={checkIcon}
+              alt="Check"
+              className="inline-block mr-2"
+              width="15"
+              height="15"
+            /> */}
           Devis 100% gratuit & sans engagement
         </div>
         <div>
-          <Image
+          {/* <Image
             src={checkIcon}
             alt="Check"
             className="inline-block mr-2"
             width="15"
             height="15"
-          />
+          /> */}
           Chauffeurs certifiés VTC
         </div>
       </div>

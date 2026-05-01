@@ -121,14 +121,6 @@ function FAQ() {
         </div>
       </div>
 
-      {/* Bottom decorative line */}
-      <div className="max-w-4xl mx-auto mt-16 flex items-center gap-4">
-        <div className="flex-1 h-[1px] bg-white/10" />
-        <span className="text-[10px] tracking-[0.4em] uppercase text-white/40">
-          NEXTWAY TRANSPORT
-        </span>
-        <div className="flex-1 h-[1px] bg-white/10" />
-      </div>
     </section>
   );
 }

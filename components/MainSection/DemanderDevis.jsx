@@ -10,39 +10,49 @@ import img2 from "@/app/assets/Nextway_Transport_bus_202604191319.jpeg";
 import img3 from "@/app/assets/3 (1).png";
 import stars from "@/app/assets/rating.png";
 
-
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 function DemanderDevis() {
   return (
-    <div className="flex flex-col lg:flex-row gap-10 px-6 lg:px-14 mt-16 items-start">
+    <div className="flex flex-col lg:flex-row gap-10 px-6 lg:px-14 mt-16 items-start  py-16 rounded-2xl relative overflow-hidden">
       {/* LEFT SIDE */}
       <div className="flex-1 text-start">
-        <h1 className="font-black text-4xl uppercase">PRÊT À ORGANISER VOTRE TRANSPORT ?</h1>
+        <h1 className="font-black text-4xl uppercase">
+          PRÊT À ORGANISER VOTRE TRANSPORT ?
+        </h1>
 
         <p className="text-sm mt-4 text-gray-300">
-          Indiquez-nous votre itinéraire, votre date et la taille de votre groupe.
-          <br /> Nous vous enverrons un devis précis et clair sous 24 heures. Un coordinateur dédié prendra en charge votre dossier.
+          Indiquez-nous votre itinéraire, votre date et la taille de votre
+          groupe.
+          <br /> Nous vous enverrons un devis précis et clair sous 2 heures. Un
+          coordinateur dédié prendra en charge votre dossier.
           <br />
-          Sans obligation de votre part, nous vous proposons un processus fluide et professionnel.
+          Sans obligation de votre part, nous vous proposons un processus fluide
+          et professionnel.
         </p>
 
         <div className="flex flex-col md:flex-row gap-6 mt-6">
           {/* TEXT BLOCK */}
           <div className="md:w-1/2">
             <p className="text-sm text-gray-300">
-              Nous accompagnons chaque jour des entreprises, des agences de voyage et des organisateurs d'événements dans la réussite de leurs déplacements. Le tarif d'une location dépend de vos exigences (durée, capacité, équipements).
+              Nous accompagnons chaque jour des entreprises, des agences de
+              voyage et des organisateurs d'événements dans la réussite de leurs
+              déplacements. Le tarif d'une location dépend de vos exigences
+              (durée, capacité, équipements).
               <br />
               <br />
-              N'hésitez pas à nous détailler votre projet. Nous analyserons toutes les options pour vous proposer la solution de transport la plus adaptée et au meilleur rapport qualité-prix.
+              N'hésitez pas à nous détailler votre projet. Nous analyserons
+              toutes les options pour vous proposer la solution de transport la
+              plus adaptée et au meilleur rapport qualité-prix.
               <br />
-              Vous serez toujours accompagné par un vrai spécialiste du transport, un humain, et non un robot.
+              Vous serez toujours accompagné par un vrai spécialiste du
+              transport, un humain, et non un robot.
             </p>
 
             <div className="mt-4">
-              <Link href="/contact-us">
+              <Link href="/#DemanderUnDevis">
                 <Button className="group relative overflow-hidden rounded-none px-10 py-5 text-xs tracking-[0.25em] uppercase font-semibold text-white bg-gradient-to-r from-[#5226ff] to-[#e060cb] transition-colors duration-500 cursor-pointer">
                   Envoyer ma demande
                 </Button>
@@ -78,7 +88,13 @@ function DemanderDevis() {
 
               {/* Body */}
               <p className="text-white/70 text-sm leading-relaxed">
-                "Organiser le transport pour notre séminaire d'entreprise annuel est un enjeu critique. Next Way s'est révélé être le partenaire idéal dans notre région. Leur équipe a su proposer une flotte de 4 véhicules parfaitement adaptés, avec une organisation fluide et sans stress. Les véhicules étaient sur place à l'heure, et nos collaborateurs ont voyagé dans un confort optimal, ce qui a grandement contribué à la réussite de notre événement."
+                "Organiser le transport pour notre séminaire d'entreprise annuel
+                est un enjeu critique. Next Way s'est révélé être le partenaire
+                idéal dans notre région. Leur équipe a su proposer une flotte de
+                4 véhicules parfaitement adaptés, avec une organisation fluide
+                et sans stress. Les véhicules étaient sur place à l'heure, et
+                nos collaborateurs ont voyagé dans un confort optimal, ce qui a
+                grandement contribué à la réussite de notre événement."
               </p>
             </div>
           </div>

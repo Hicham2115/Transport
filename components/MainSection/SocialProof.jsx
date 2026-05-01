@@ -109,7 +109,7 @@ function SocialProof() {
               fontSize: "1.1rem",
             }}
           >
-            +500 missions réalisées · Note moyenne{" "}
+            Note moyenne{" "}
             <span className="text-[#a78bfa] font-semibold">4.9/5</span> sur
             Google
           </p>
@@ -204,14 +204,6 @@ function SocialProof() {
         </div>
       </div>
 
-      {/* Bottom decorative line */}
-      <div className="max-w-6xl mx-auto mt-16 flex items-center gap-4">
-        <div className="flex-1 h-[1px] bg-white/10" />
-        <span className="text-[10px] tracking-[0.4em] uppercase text-white/40">
-          NEXTWAY TRANSPORT
-        </span>
-        <div className="flex-1 h-[1px] bg-white/10" />
-      </div>
     </section>
   );
 }

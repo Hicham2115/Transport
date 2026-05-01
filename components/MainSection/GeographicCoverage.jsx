@@ -97,7 +97,7 @@ function CoverageBoard() {
       <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div className="flex items-center gap-4">
           <span className="text-[10px] tracking-widest uppercase text-white/85">
-            Paris & Au-delà · 24h/24 · 7j/7 · 365j/an
+            Île-de-France & grande distance sur demande
           </span>
         </div>
         <Link href="/#DemanderUnDevis">
