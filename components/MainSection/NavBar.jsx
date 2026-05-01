@@ -17,10 +17,9 @@ import Logo from "@/app/assets/nextway_logo_transparent_4k.png";
 
 const navigationLinks = [
   { href: "/", label: "Accueil" },
-  { href: "/#Services", label: "Services" },
   { href: "/#Autocars", label: "Autocars" },
   { href: "/#Destinations", label: "Destinations" },
-  // { href: "/#DemanderUnDevis", label: "Demander un devis" },
+  { href: "/#FAQ", label: "FAQ" },
 ];
 
 export default function Component() {

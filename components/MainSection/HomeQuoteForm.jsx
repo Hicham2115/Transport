@@ -101,19 +101,12 @@ function HomeQuoteForm() {
     if (!validateForm()) return;
     setIsSubmitting(true);
     try {
-      const isEmail = formData.contact.includes("@");
       const payload = {
-        fullName: formData.fullName,
-        email: isEmail ? formData.contact : "",
-        phone: !isEmail ? formData.contact : "",
-        company: "",
+        serviceType: formData.serviceType,
         people: formData.people,
-        dateFormatted: date ? format(date, "PPP") : "Non précisée",
-        time: "",
-        departureCity: "",
-        arrivalCity: "",
-        hasReturn: "Non",
-        notes: `Type de prestation : ${formData.serviceType}`,
+        fullName: formData.fullName,
+        contact: formData.contact,
+        dateFormatted: date ? format(date, "PPP") : "",
       };
       const result = await sendContactEmail(payload);
       if (result.success) {

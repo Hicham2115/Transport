@@ -66,8 +66,8 @@ function Hero() {
             src={checkIcon}
             alt="Check"
             className="inline-block mr-2"
-            width="20"
-            height="20"
+            width="15"
+            height="15"
           />
           Réponse sous 2h garantie
         </div>
@@ -76,8 +76,8 @@ function Hero() {
             src={checkIcon}
             alt="Check"
             className="inline-block mr-2"
-            width="20"
-            height="20"
+            width="15"
+            height="15"
           />
           Devis 100% gratuit & sans engagement
         </div>
@@ -86,8 +86,8 @@ function Hero() {
             src={checkIcon}
             alt="Check"
             className="inline-block mr-2"
-            width="20"
-            height="20"
+            width="15"
+            height="15"
           />
           Chauffeurs certifiés VTC
         </div>

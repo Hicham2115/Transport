@@ -25,17 +25,29 @@ import Loading from "./loading";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 48 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+  },
 };
 
 const fadeLeft = {
   hidden: { opacity: 0, x: -48 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+  },
 };
 
 const zoomIn = {
   hidden: { opacity: 0, scale: 0.93 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+  },
 };
 
 function Reveal({ children, variants = fadeUp, className = "" }) {
@@ -150,45 +162,32 @@ function Page() {
           <Hero />
         </div>
 
-        {/* [02] Trust Strip */}
         <Reveal>
           <TrustStrip />
         </Reveal>
 
-        {/* [03] Service Intent Selector */}
         <Reveal>
           <ServiceIntentSelector />
         </Reveal>
 
-        {/* [04] Formulaire de Devis */}
         <Reveal>
           <HomeQuoteForm />
         </Reveal>
 
-        {/* [05] Engagement de Réactivité */}
         <Reveal>
           <SpeedCommitment />
         </Reveal>
 
-        {/* [06] Couverture Géographique */}
         <Reveal>
           <GeographicCoverage />
         </Reveal>
-
-        {/* [07] Preuve Sociale */}
-        <Reveal variants={zoomIn}>
-          <SocialProof />
+        <Reveal variants={fadeLeft}>
+          <FirstSection />
         </Reveal>
-
-        {/* [08] Services Premium Inclus */}
         <Reveal>
           <PremiumServices />
         </Reveal>
 
-        {/* Existing site sections */}
-        <Reveal variants={fadeLeft}>
-          <FirstSection />
-        </Reveal>
         {/* <SecondSection /> */}
         {/* <ThirdSection /> */}
         <div id="Services">{/* <Services /> */}</div>
@@ -206,7 +205,6 @@ function Page() {
         {/* [10] Urgence */}
         {/* <UrgencyBlock /> */}
 
-        {/* [11] FAQ */}
         <Reveal>
           <div id="FAQ">
             <FaQ />
@@ -216,7 +214,10 @@ function Page() {
         {/* [12] Réassurance Légale */}
         {/* <LegalReassurance /> */}
 
-        {/* [13] CTA Final */}
+        <Reveal variants={zoomIn}>
+          <SocialProof />
+        </Reveal>
+
         <Reveal>
           <FinalCTA />
         </Reveal>

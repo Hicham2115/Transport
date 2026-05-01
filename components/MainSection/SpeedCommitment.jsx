@@ -86,7 +86,7 @@ function SpeedCommitment() {
                   <svg width="32" height="16" viewBox="0 0 32 16" fill="none">
                     <path
                       d="M0 8 H24 M20 2 L28 8 L20 14"
-                      stroke="rgba(82,38,255,0.5)"
+                      stroke="white"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
