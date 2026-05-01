@@ -48,7 +48,7 @@ function Services() {
           <Lottie animationData={animationData} loop={true} />
         </div>
       </div>
-      <div className="relative z-10 max-w-6xl mx-auto grid gap-9 items-center">
+      {/* <div className="relative z-10 max-w-6xl mx-auto grid gap-9 items-center">
         <h1 className="text-2xl md:text-4xl font-serif leading-tight ">
           Conformité et Sécurité
         </h1>
@@ -60,7 +60,7 @@ function Services() {
           matière d'assurances.
         </p>
         <br />
-        <div className="flex gap-6 flex-wrap">
+         <div className="flex gap-6 flex-wrap">
           <div>
             <h1 className="text-2xl md:text-3xl font-serif leading-tight ">
               Nos exigences de qualité
@@ -88,7 +88,7 @@ function Services() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -83,7 +83,7 @@ function FirstSection() {
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.1rem",
             }}
-            text="Notre équipe examine votre demande et sélectionne les meilleurs opérateurs de notre réseau de partenaires vérifiés. Vous recevez un devis détaillé sous 24 heures. Aucune attente, aucune estimation floue, uniquement des prix clairs."
+            text="Notre équipe examine votre demande et sélectionne les meilleurs opérateurs de notre réseau de partenaires vérifiés. Vous recevez un devis détaillé sous 2 heures. Aucune attente, aucune estimation floue, uniquement des prix clairs."
             className="leading-relaxed text-base max-w-lg"
             delay={15}
             duration={0.3}
@@ -132,12 +132,12 @@ function FirstSection() {
       </div>
 
       {/* Bottom decorative line */}
-      <div className="relative z-10 max-w-6xl mx-auto mt-16 flex items-center gap-4">
-        <div className="flex-1 h-[1px] bg-blue-100" />
-        <span className="text-[10px] tracking-[0.4em] uppercase text-white">
-          FRANCE ET EUROPE
+      <div className="max-w-6xl mx-auto mt-16 flex items-center gap-4">
+        <div className="flex-1 h-[1px] bg-white/10" />
+        <span className="text-[10px] tracking-[0.4em] uppercase text-white/40">
+          PARIS & ÎLE-DE-FRANCE
         </span>
-        <div className="flex-1 h-[1px] bg-blue-100" />
+        <div className="flex-1 h-[1px] bg-white/10" />
       </div>
     </section>
   );

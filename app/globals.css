@@ -45,6 +45,24 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  @keyframes marquee {
+  from {
+    transform: translateX(0);
+    }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+    }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
 }
 
 :root {
@@ -185,6 +203,38 @@ html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+/* ── Scroll-reveal ───────────────────────────────────────────── */
+.scroll-reveal {
+  will-change: opacity, transform;
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* fade-up (default) */
+.scroll-reveal--fade-up          { opacity: 0; transform: translateY(48px); }
+.scroll-reveal--fade-up.scroll-reveal--visible { opacity: 1; transform: translateY(0); }
+
+/* fade-down */
+.scroll-reveal--fade-down        { opacity: 0; transform: translateY(-48px); }
+.scroll-reveal--fade-down.scroll-reveal--visible { opacity: 1; transform: translateY(0); }
+
+/* fade-left */
+.scroll-reveal--fade-left        { opacity: 0; transform: translateX(-48px); }
+.scroll-reveal--fade-left.scroll-reveal--visible { opacity: 1; transform: translateX(0); }
+
+/* fade-right */
+.scroll-reveal--fade-right       { opacity: 0; transform: translateX(48px); }
+.scroll-reveal--fade-right.scroll-reveal--visible { opacity: 1; transform: translateX(0); }
+
+/* fade (opacity only) */
+.scroll-reveal--fade             { opacity: 0; }
+.scroll-reveal--fade.scroll-reveal--visible { opacity: 1; }
+
+/* zoom-in */
+.scroll-reveal--zoom-in          { opacity: 0; transform: scale(0.92); }
+.scroll-reveal--zoom-in.scroll-reveal--visible { opacity: 1; transform: scale(1); }
 
 /* Shared page entrance animations */
 @keyframes fade-in-up {
