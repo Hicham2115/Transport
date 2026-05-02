@@ -101,7 +101,7 @@ function CoverageBoard() {
           </span>
         </div>
         <Link href="/#DemanderUnDevis">
-          <button className="overflow-hidden rounded-none px-8 py-4 text-xs tracking-[0.25em] uppercase font-semibold text-white bg-linear-to-r from-[#5226ff] to-[#e060cb] hover:opacity-90 transition-opacity duration-300 cursor-pointer whitespace-nowrap">
+          <button className="overflow-hidden rounded-none px-4 py-2 sm:px-8 sm:py-4 text-[10px] sm:text-xs tracking-[0.25em] uppercase font-semibold text-white bg-linear-to-r from-[#5226ff] to-[#e060cb] hover:opacity-90 transition-opacity duration-300 cursor-pointer whitespace-nowrap">
             Obtenir un devis pour mon trajet
           </button>
         </Link>

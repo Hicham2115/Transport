@@ -45,13 +45,13 @@ function Hero() {
         <div className="flex flex-col sm:flex-row gap-3 sm:px-4 w-full sm:w-auto">
           <Link
             href="/#DemanderUnDevis"
-            className="w-full sm:w-auto px-5 py-3 sm:px-3 sm:py-2 text-sm sm:text-base rounded-sm text-white font-semibold cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap shadow-lg hover:bg-white/20 transition-all duration-300"
+            className="w-full sm:w-auto px-3 py-2 text-xs sm:px-3 sm:py-2 sm:text-base rounded-sm text-white font-semibold cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap shadow-lg hover:bg-white/20 transition-all duration-300"
           >
             OBTENIR MON DEVIS GRATUIT EN 24H
           </Link>
           <Link
             href="tel:+33628648016"
-            className="w-full flex gap-3 sm:w-auto px-5 py-3 sm:px-3 sm:py-2 text-sm sm:text-base rounded-sm text-white font-semibold cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap shadow-lg hover:bg-white/20 transition-all duration-300"
+            className="w-full flex gap-3 sm:w-auto px-3 py-2 text-xs sm:px-3 sm:py-2 sm:text-base rounded-sm text-white font-semibold cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap shadow-lg hover:bg-white/20 transition-all duration-300"
           >
             <PhoneIncoming />
             Appel Direct : +33 6 28 64 80 16
