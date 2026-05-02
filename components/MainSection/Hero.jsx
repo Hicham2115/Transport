@@ -13,7 +13,7 @@ function Hero() {
     <div className="text-center py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-16 space-y-6 mt-8 max-w-5xl mx-auto">
       {/* EYEBROW */}
       <div className="animate-fade-in-up animate-fade-in-up-delay-1 mb-4">
-        <span className="px-3 py-1 rounded-full sm:px-4 sm:py-1.5 bg-white/10 border border-white/20 text-[5px] sm:text-xs font-semibold sm:tracking-widest tracking-wide text-white/80 uppercase">
+        <span className="px-3 py-1 rounded-full sm:px-4 sm:py-1.5 bg-white/10 border border-white/20 text-[10px] sm:text-xs font-semibold sm:tracking-widest tracking-wide text-white/80 uppercase">
           Opérateur officiel Île-de-France · Paris CDG Orly · Le Bourget
         </span>
       </div>
@@ -51,7 +51,7 @@ function Hero() {
           </Link>
           <Link
             href="tel:+33628648016"
-            className="w-full flex gap-3 sm:w-auto px-3 py-2 text-xs sm:px-3 sm:py-2 sm:text-base rounded-sm text-white font-semibold cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap shadow-lg hover:bg-white/20 transition-all duration-300"
+            className="w-full flex justify-center gap-3 sm:justify-start sm:w-auto px-3 py-2 text-xs sm:px-3 sm:py-2 sm:text-base rounded-sm text-white font-semibold cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 whitespace-nowrap shadow-lg hover:bg-white/20 transition-all duration-300"
           >
             <PhoneIncoming />
             Appel Direct : +33 6 28 64 80 16
@@ -60,7 +60,7 @@ function Hero() {
       </div>
 
       {/* MENTION SOUS-BOUTON */}
-      <div className="text-xs flex gap-4 justify-center items-center text-white/80 animate-fade-in-up animate-fade-in-up-delay-4 mt-4">
+      <div className="text-[9px] sm:text-xs flex flex-nowrap gap-2 sm:gap-4 justify-center items-center text-white/80 animate-fade-in-up animate-fade-in-up-delay-4 mt-4">
         <div>
           {/* <Image
               src={checkIcon}
