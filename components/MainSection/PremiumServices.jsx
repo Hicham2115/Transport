@@ -86,7 +86,7 @@ function PremiumServices() {
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.1rem",
-            }}
+            }} 
           > 
             En Île-de-France, toute entreprise de transport de personnes est
             soumise à des obligations strictes. Nextway Transport les respecte
