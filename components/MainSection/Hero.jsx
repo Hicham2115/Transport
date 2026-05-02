@@ -13,7 +13,7 @@ function Hero() {
     <div className="text-center py-12 sm:py-16 px-4 sm:px-6 md:px-8 lg:px-16 space-y-6 mt-8 max-w-5xl mx-auto">
       {/* EYEBROW */}
       <div className="animate-fade-in-up animate-fade-in-up-delay-1 mb-4">
-        <span className="px-3 py-1 rounded-full sm:px-4 sm:py-1.5 bg-white/10 border border-white/20 text-[10px] sm:text-xs font-semibold sm:tracking-widest tracking-wide text-white/80 uppercase">
+        <span className="px-3 py-1 rounded-full sm:px-4 sm:py-1.5 bg-white/10 border border-white/20 text-[5px] sm:text-xs font-semibold sm:tracking-widest tracking-wide text-white/80 uppercase">
           Opérateur officiel Île-de-France · Paris CDG Orly · Le Bourget
         </span>
       </div>
