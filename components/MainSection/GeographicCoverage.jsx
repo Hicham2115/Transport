@@ -42,7 +42,19 @@ const zones = [
   {
     Icon: Route,
     label: "Longue distance (sur demande)",
-    items: ["Lyon", "Bordeaux", "Tours", "Le Mans", "Reims", "Lille"],
+    items: [
+      "Lyon",
+      "Bordeaux",
+      "Tours",
+      "Le Mans",
+      "Reims",
+      "Lille",
+      "ESPAGNE",
+      "ALLEMAGNE",
+      "BELGIQUE",
+      "FRANCE",
+      "(Europe entière)",
+    ],
   },
 ];
 
