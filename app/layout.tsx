@@ -6,6 +6,8 @@ import Navbar from "@/components/MainSection/NavBar";
 import { Toaster } from "@/components/ui/sonner";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 
+const siteUrl = new URL("https://www.nextway-transport.com");
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,7 +24,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Next Way Transport | Location de Bus & Minibus avec Chauffeur",
+  metadataBase: siteUrl,
+
+  title: {
+    default: "Next Way Transport | Location de Bus & Minibus avec Chauffeur",
+    template: "%s | Next Way Transport",
+  },
   description:
     "NEXT WAY TRANSPORT est votre spécialiste de la location de bus, minibus et autocar avec chauffeur. Devis rapide en moins de 24h, transport fiable en France et en Europe.",
 
@@ -40,33 +47,36 @@ export const metadata: Metadata = {
 
   authors: [{ name: "NEXT WAY TRANSPORT" }],
 
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
   openGraph: {
-    title: "Next Way Transport | Location de Bus avec Chauffeur",
+    title: "Next Way Transport | Location de Bus & Minibus avec Chauffeur",
     description:
-      "Réservez facilement votre bus ou minibus avec chauffeur. Service rapide, fiable et adapté à tous vos déplacements.",
-    url: "https://yourwebsite.com",
-    siteName: "NEXT WAY TRANSPORT",
-    images: [
-      {
-        url: "https://yourwebsite.com/preview.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Next Way Transport",
-      },
-    ],
+      "Réservez facilement votre bus ou minibus avec chauffeur. Devis rapide en moins de 24h, service fiable en France et en Europe.",
+    url: "/",
+    siteName: "Next Way Transport",
     locale: "fr_FR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Next Way Transport",
+    title: "Next Way Transport | Location de Bus & Minibus avec Chauffeur",
     description:
-      "Location de bus, minibus et autocar avec chauffeur. Devis rapide en moins de 24h.",
-    images: ["https://yourwebsite.com/preview.jpg"],
-  },
-
-  icons: {
-    icon: "/icon.png",
+      "Location de bus, minibus et autocar avec chauffeur. Devis rapide en moins de 24h, transport fiable en France et en Europe.",
   },
 
   themeColor: "#8164f3",
@@ -78,7 +88,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={` ${inter.variable} h-full antialiased`}>
+    <html lang="fr" className={` ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-[#060010] text-white cursor-default">
         <Navbar />
         {children}
