@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/MainSection/Footer";
@@ -22,6 +22,10 @@ const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+  themeColor: "#8164f3",
+};
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
@@ -78,8 +82,6 @@ export const metadata: Metadata = {
     description:
       "Location de bus, minibus et autocar avec chauffeur. Devis rapide en moins de 24h, transport fiable en France et en Europe.",
   },
-
-  themeColor: "#8164f3",
 };
 
 export default function RootLayout({
